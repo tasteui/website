@@ -28,6 +28,10 @@ class Time
     <x-time :min-minute="30" :max-minute="45" />
     HTML;
 
+    public const REQUIRED = <<<'HTML'
+    <x-time required />
+    HTML;
+
     public const HELPER = <<<'HTML'
     <x-time helper />
     HTML;

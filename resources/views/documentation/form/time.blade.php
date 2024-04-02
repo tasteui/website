@@ -47,6 +47,11 @@
             value when time is selected.
         </x-warning>
     </x-section>
+    <x-section title="Required" description="An option to adjust the time to the current one without the possibility of clearing the input.">
+        <x-preview language="blade" :contents="$required">
+            <x-time format="24" required />
+        </x-preview>
+    </x-section>
     <x-section title="Helper" description="An option to easily select the current time.">
         <x-preview language="blade" :contents="$helper">
             <x-time format="24" helper />
