@@ -18,7 +18,7 @@ if (! function_exists('apply_prefix')) {
                 }, $value);
 
                 $value = preg_replace_callback('/(<\/x-(?!slot:))([^>]*>)/', function ($matches) use ($prefix) {
-                        return "</x-{$prefix}{$matches[2]}";
+                    return "</x-{$prefix}{$matches[2]}";
                 }, $value);
 
                 return [$key => $value];
