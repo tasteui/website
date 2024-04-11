@@ -77,5 +77,17 @@
             </x-link>
         </p>
     </x-section>
+    <x-section title="Display After Redirects">
+        <p>
+            <u>Starting from version 1.23.0</u> you can trigger a toast that will actually
+            be displayed after a redirect action. Regardless of whether the redirection is
+            to another Livewire component or to basic controllers, you can still display the toast.
+        </p>
+        <x-code :contents="$flash"/>
+        <p>
+            When using <x-block>flash()</x-block> method, the toast will not be displayed in the current
+            request, but yes stored temporarily in the session and displayed in the next request.
+        </p>
+    </x-section>
     <x-available-configuration />
 </x-layout>
