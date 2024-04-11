@@ -13,12 +13,8 @@ if (! function_exists('apply_prefix')) {
             ->filter(fn ($value) => is_string($value))
             ->filter(fn ($value) => str_contains($value, '<x-'))
             ->mapWithKeys(function (string $value, string $key) use ($prefix) {
-                $value = preg_replace_callback('/(<x-(?!slot:))([^>]*>)/', function ($matches) use ($prefix) {
-                    return "<x-{$prefix}{$matches[2]}";
-                }, $value);
-
-                $value = preg_replace_callback('/(<\/x-(?!slot:))([^>]*>)/', function ($matches) use ($prefix) {
-                    return "</x-{$prefix}{$matches[2]}";
+                $value = preg_replace_callback('/(<\/?x-(?!slot:))([^>]*>)/', function ($matches) use ($prefix) {
+                    return "{$matches[1]}{$prefix}{$matches[2]}";
                 }, $value);
 
                 return [$key => $value];
