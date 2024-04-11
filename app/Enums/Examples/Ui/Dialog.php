@@ -168,7 +168,7 @@ class Dialog
     use Livewire\Component;
     use TallStackUi\Traits\Interactions;
     
-    class Livewire extends Component
+    class Payment extends Component
     {
         use Interactions;
     

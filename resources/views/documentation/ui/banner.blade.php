@@ -82,7 +82,7 @@
             <livewire:documentation.interactions.banner.examples />
         </x-preview>
     </x-section>
-    <x-section title="Display After Redirects">
+    <x-section title="Display After Redirects" anchor="livewire-integration-display-after-redirects">
         <p>
             <u>Starting from version 1.23.0</u> you can trigger a banner that will actually
             be displayed after a redirect action. Regardless of whether the redirection is
