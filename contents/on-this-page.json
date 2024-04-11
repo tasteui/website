@@ -206,7 +206,8 @@
                 "0": "Concept",
                 "1": "Usage",
                 "2": "Available Options",
-                "3": "Example"
+                "3": "Example",
+                "4": "Display After Redirects"
             }
         }
     },
@@ -466,7 +467,8 @@
         "4": "Events",
         "5": "JavaScript API",
         "6": "Color Personalization",
-        "7": "Configurations"
+        "7": "Display After Redirects",
+        "8": "Configurations"
     },
     "docs.interaction.toast": {
         "0": "Configuration",
@@ -477,7 +479,8 @@
         "5": "Events",
         "6": "JavaScript API",
         "7": "Color Personalization",
-        "8": "Configurations"
+        "8": "Display After Redirects",
+        "9": "Configurations"
     },
     "docs.configuration": {
         "0": "Configuration File",

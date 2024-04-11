@@ -163,6 +163,32 @@ class Dialog
     </div>
     HTML;
 
+    public const FLASH = <<<'HTML'
+    use Illuminate\Contracts\View\View;
+    use Livewire\Component;
+    use TallStackUi\Traits\Interactions;
+    
+    class Payment extends Component
+    {
+        use Interactions;
+    
+        public function render(): View
+        {
+            return view('livewire.livewire');
+        }
+    
+        public function save()
+        {
+            $this->dialog()
+                ->success('Done!', 'Your money has been sent!')
+                ->flash() // [tl! highlight]
+                ->send();
+    
+            return $this->redirect(route('dashboard'));
+        }
+    }
+    HTML;
+
     public const PERSONALIZATION = <<<'HTML'
     TallStackUi::personalize()
         ->dialog()

@@ -1,4 +1,4 @@
-<header class="sticky top-0 z-40 flex items-center justify-between bg-white px-4 py-5 shadow-md shadow-slate-900/5 dark:bg-dark-900 dark:shadow-none sm:px-6 lg:px-8">
+<header class="top-0 z-40 flex items-center justify-between bg-white px-4 py-5 shadow-md shadow-slate-900/5 dark:bg-dark-900 dark:shadow-none sm:px-6 lg:px-8">
     <div class="hidden lg:block">
         <x-svg.banner class="h-8 w-10" />
     </div>
