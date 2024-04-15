@@ -140,7 +140,7 @@
                             <x-layout.navigation.link :href="route('documentation.ui.loading')" text="Loading" />
                         </li>
                         <li class="relative ml-4">
-                            <x-layout.navigation.link :href="route('documentation.ui.progress')" text="Progress" new />
+                            <x-layout.navigation.link :href="route('documentation.ui.progress')" text="Progress" />
                         </li>
                         <li class="relative ml-4">
                             <x-layout.navigation.link :href="route('documentation.ui.reaction')" text="Reaction" />

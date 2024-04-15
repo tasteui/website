@@ -38,6 +38,7 @@
             <li><a href="https://heroicons.com/" target="_blank">Heroicons</a></li>
             <li><a href="https://phosphoricons.com/" target="_blank">PhosphorIcons</a></li>
             <li><a href="https://fonts.google.com/icons" target="_blank">Google Material Design Icons</a></li>
+            <li><a href="https://tabler.io/icons" target="_blank">TablerIcons</a></li>
         </ul>
     </x-section>
     <x-section title="Setup Icons" disable-copy>
