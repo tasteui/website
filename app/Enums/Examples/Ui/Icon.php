@@ -138,15 +138,12 @@ class Icon
     HTML;
 
     public const COMPOSER_HOOK = <<<'HTML'
-    // ...
-    
     "scripts": {
-        "post-update-cmd": [
-            "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
-            "@php artisan tallstackui:setup-icon --force --ansi", // [tl! add]
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi",
+            "@php artisan tallstackui:setup-icon --force --ansi" // [tl! add]
         ],
-    },
-
-    // ...
+    }
     HTML;
 }

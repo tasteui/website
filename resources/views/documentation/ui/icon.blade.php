@@ -57,7 +57,7 @@
                 the production environment. To avoid this manual work, you can add this
                 instruction to a Composer hook:
             </p>
-            <x-code language="json" :contents="$composerHook" />
+            <x-code language="json" :contents="$composerHook" disable-copy />
             <p>
                 Using this approach, every time you run the <x-block>composer install</x-block>
                 or <x-block>composer update</x-block> commands, the icon library will be downloaded
