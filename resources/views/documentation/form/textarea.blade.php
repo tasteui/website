@@ -37,6 +37,11 @@
             <x-textarea :rows="1" resize-auto />
         </x-preview>
     </x-section>
+    <x-section title="Character Count" description="An option to show the number of characters.">
+        <x-preview language="blade" :contents="$resizeAuto">
+            <x-textarea maxlength="100" count />
+        </x-preview>
+    </x-section>
     <x-section title="Invalidate" description="An option to not show validation error message.">
         <x-preview language="blade" :contents="$invalidate">
             <x-textarea label="Name" hint="Insert the description" invalidate />

@@ -53,7 +53,8 @@
         "2": "Required Label Indicator",
         "3": "Resize",
         "4": "Resize Auto",
-        "5": "Invalidate"
+        "5": "Character Count",
+        "6": "Invalidate"
     },
     "docs.form.checkbox": {
         "0": "Basic Usage",
