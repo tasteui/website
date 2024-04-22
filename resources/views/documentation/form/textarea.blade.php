@@ -39,8 +39,9 @@
     </x-section>
     <x-section title="Character Count" description="An option to show the number of characters.">
         <x-preview language="blade" :contents="$count">
-            <div class="mb-2">
-                <x-textarea maxlength="10" count />
+            <div class="mb-2 space-y-2">
+                <x-textarea label="Current and Max Quantities" maxlength="10" count />
+                <x-textarea label="Only Current Quantity" count />
             </div>
         </x-preview>
     </x-section>

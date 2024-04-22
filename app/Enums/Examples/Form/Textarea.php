@@ -25,7 +25,11 @@ class Textarea
     HTML;
 
     public const COUNT = <<<'HTML'
+    <!-- Current and Max Quantities-->
     <x-textarea maxlength="10" count />
+    
+    <!-- Only Current Quantity-->
+    <x-textarea count />
     HTML;
 
     public const INVALIDATE = <<<'HTML'
