@@ -39,7 +39,9 @@
     </x-section>
     <x-section title="Character Count" description="An option to show the number of characters.">
         <x-preview language="blade" :contents="$count">
-            <x-textarea maxlength="10" count />
+            <div class="mb-2">
+                <x-textarea maxlength="10" count />
+            </div>
         </x-preview>
     </x-section>
     <x-section title="Invalidate" description="An option to not show validation error message.">
