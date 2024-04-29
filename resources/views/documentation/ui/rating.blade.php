@@ -61,7 +61,7 @@
             <livewire:documentation.ui.rating :model="2" />
         </x-preview>
     </x-section>
-    <x-section title="Label">
+    <x-section title="Text">
         <x-preview language="blade" :contents="$label">
             <livewire:documentation.ui.rating :model="3" />
         </x-preview>
