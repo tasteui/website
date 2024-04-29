@@ -50,6 +50,9 @@ jobs:
       - name: Generate Artisan Key
         run: cp .env.example .env && php artisan key:generate
 
+      - name: Route Integrity
+        run: php artisan route:list
+
       - name: Pint
         run: ./vendor/bin/pint --test
 

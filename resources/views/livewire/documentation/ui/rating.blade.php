@@ -50,5 +50,7 @@ $evaluate = function () {
         <x-rating :rate="3" color="rose" />
         <x-rating :rate="3" color="black" />
         <x-rating :rate="3" color="white" />
+    @elseif ($model === 6)
+        <x-rating :rate="3" x-on:evaluate="alert(`Evaluated: ${JSON.stringify($event.detail.evaluate)}`)" />
     @endif
 </div>

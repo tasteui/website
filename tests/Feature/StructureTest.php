@@ -57,6 +57,7 @@ test('can access all routes', function (string $route) {
     fn () => route('documentation.ui.loading'),
     fn () => route('documentation.ui.progress'),
     fn () => route('documentation.ui.reaction'),
+    fn () => route('documentation.ui.rating'),
     fn () => route('documentation.ui.slide'),
     fn () => route('documentation.ui.stats'),
     fn () => route('documentation.ui.step'),

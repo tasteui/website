@@ -345,13 +345,24 @@
     },
     "docs.ui.reaction": {
         "0": "Concept",
-        "1": "Persist Reactions",
+        "1": "Persist Reaction",
         "3": "Basic Usage",
         "4": "Animated Style",
         "5": "Tooltip Position",
         "6": "Quantity Slot",
         "7": "Using Less Icons",
-        "8": "Slot"
+        "8": "Slot",
+        "9": "Events"
+    },
+    "docs.ui.rating": {
+        "0": "Concept",
+        "1": "Persist Rating",
+        "3": "Basic Usage",
+        "4": "Rating Quantity",
+        "5": "Text",
+        "6": "Size Variations",
+        "7": "Color Variations",
+        "8": "Events"
     },
     "docs.form.select": {
         "Native": {
