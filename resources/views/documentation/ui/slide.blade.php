@@ -161,12 +161,12 @@
         </x-preview>
     </x-section>
     <x-warning text="Make sure to provide some way to close the slide when using this option, such as a button within the slide." />
-    <x-section class="mt-4" title="Wireable" description="An option to control the modal via Livewire.">
+    <x-section class="mt-4" title="Wireable" description="An option to control the slide via Livewire.">
         <x-preview language="blade" :contents="$wireable">
             <livewire:documentation.slide.entangle/>
         </x-preview>
     </x-section>
-    <x-section title="Wireable Personalized" description="Customize which property to use to control the modal via Livewire.">
+    <x-section title="Wireable Personalized" description="Customize which property to use to control the slide via Livewire.">
         <x-preview language="blade" :contents="$wireableCustomized">
             <livewire:documentation.slide.customentangle/>
         </x-preview>
