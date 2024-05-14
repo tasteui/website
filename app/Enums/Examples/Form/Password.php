@@ -20,6 +20,13 @@ class Password
                 value="TallStackUi" />
     HTML;
 
+    public const CAPS_LOCK = <<<'HTML'
+    <x-password hint="Activate caps lock to see the indicator." />
+
+    <!-- To disable and do not show the indicator use `mixed-case` -->
+    <x-password hint="Activate caps lock to see the indicator." mixed-case />
+    HTML;
+
     public const FORMAT_VALIDATOR = <<<'HTML'
     <!-- Allowed: min, symbols, numbers, mixed -->
 

@@ -28,6 +28,14 @@
             <x-password label="Password *" hint="Insert your password" value="TallStackUi" />
         </x-preview>
     </x-section>
+    <x-section title="Caps Lock Indicator" description="An option to control the caps lock indicator.">
+        <x-preview language="blade" :contents="$capsLock">
+            <x-password hint="Activate caps lock to see the indicator." />
+        </x-preview>
+        <x-warning class="mt-4">
+            The caps lock indicator does not work on mobile devices.
+        </x-warning>
+    </x-section>
     <x-section title="Format Validator" description="An option to visually validate the format of the entered password.">
         <x-preview language="blade" :contents="$formatValidator">
             <x-password :rules="['min:8', 'symbols:!@#', 'numbers', 'mixed']" />

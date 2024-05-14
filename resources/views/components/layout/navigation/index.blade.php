@@ -146,7 +146,7 @@
                             <x-layout.navigation.link :href="route('documentation.ui.reaction')" text="Reaction" />
                         </li>
                         <li class="relative ml-4">
-                            <x-layout.navigation.link :href="route('documentation.ui.rating')" text="Rating" new />
+                            <x-layout.navigation.link :href="route('documentation.ui.rating')" text="Rating" />
                         </li>
                         <li class="relative ml-4">
                             <x-layout.navigation.link :href="route('documentation.ui.slide')" text="Slide" />

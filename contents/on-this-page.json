@@ -23,10 +23,11 @@
         "0": "Basic Usage",
         "1": "Label & Hint",
         "2": "Required Label Indicator",
-        "3": "Format Validator",
-        "4": "Password Generator",
-        "5": "Events",
-        "6": "Invalidate"
+        "3": "Caps Lock Indicator",
+        "4": "Format Validator",
+        "5": "Password Generator",
+        "6": "Events",
+        "7": "Invalidate"
     },
     "docs.form.color": {
         "0": "Basic Usage",
