@@ -57,6 +57,17 @@
             </div>
         </x-preview>
     </x-section>
+    <x-section title="Events" new>
+        <x-preview language="blade" :contents="$events">
+            <div class="space-y-2">
+                <x-pin length="5" label="Filled Event" x-on:filled="alert(`Filled: ${$event.detail.model}`)" />
+                <x-pin length="5" label="Clear Event" clear x-on:clear="alert(`Cleared: ${$event.detail.model}`)" />
+            </div>
+        </x-preview>
+        <x-warning class="mt-4">
+            The clear event needs the clear option to be enabled.
+        </x-warning>
+    </x-section>
     <x-section title="Invalidate" description="An option to not show validation error message.">
         <x-preview language="blade" :contents="$invalidate">
             <x-pin length="5" invalidate />

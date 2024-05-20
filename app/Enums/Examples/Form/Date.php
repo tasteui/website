@@ -57,7 +57,7 @@ class Date
     <!-- Collection -->
     <x-date :disable="collect(['2020-01-01','2020-01-02','2020-01-03'])" />
 
-    <!-- Carbon Interval-->
+    <!-- Carbon Interval -->
     <x-date :disable="\Carbon\CarbonInterval::days(1)->toPeriod(now(), now()->addWeek())->toArray()" />
     HTML;
 
@@ -88,6 +88,10 @@ class Date
     -->
     
     <x-date multiple />
+    HTML;
+
+    public const MONTH_YEAR_ONLY = <<<'HTML'
+    <x-date month-year-only />
     HTML;
 
     public const EVENTS = <<<'HTML'

@@ -98,6 +98,11 @@
             ]" />
         </x-preview>
     </x-section>
+    <x-section title="Month Year Only" new description="An option to select only month and year.">
+        <x-preview language="blade" :contents="$monthYearOnly">
+            <x-date month-year-only />
+        </x-preview>
+    </x-section>
     <x-section title="Events">
         <x-preview language="blade" :contents="$events">
             <x-date x-on:select="alert(`Selected Date: ${$event.detail.date}`)" x-on:clear="alert(`Cleaned!`)" />

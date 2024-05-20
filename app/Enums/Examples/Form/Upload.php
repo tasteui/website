@@ -146,10 +146,8 @@ class Upload
     HTML;
 
     public const EVENTS = <<<'HTML'
-    <!-- The listener receive the uploaded file $event.detail.files -->
     <x-upload x-on:upload="console.log($event.detail.files)" />
     
-    <!-- The listener receive the uploaded file $event.detail.file -->
     <x-upload delete x-on:remove="console.log($event.detail.file)" />
     HTML;
 

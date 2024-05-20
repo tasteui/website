@@ -1,4 +1,12 @@
-@props(['title' => null, 'description' => null, 'anchor' => null, 'id' => null, 'p' => null, 'disableCopy' => null])
+@props([
+    'p'           => null,
+    'id'          => null,
+    'new'         => null,
+    'title'       => null,
+    'anchor'      => null,
+    'description' => null,
+    'disableCopy' => null,
+])
 
 @php($anchor ??= str($title)->slug()->lower())
 
@@ -6,11 +14,14 @@
     @if ($title)
         <div @class(['flex items-center justify-between', 'mb-2' => $description === null])>
             @if ($title)
-            <h2 @class(['text-xl tracking-tight text-pink-600 font-medium cursor-pointer']) x-on:mouseover="anchor = true" x-on:mouseleave="anchor = false">
+            <h2 @class(['text-xl tracking-tight text-pink-600 font-medium cursor-pointer', 'flex items-center gap-2' => $new]) x-on:mouseover="anchor = true" x-on:mouseleave="anchor = false">
                 <a href="#{{ $anchor }}">
                     <span class="text-gray-400 dark:text-gray-400" x-show="anchor">#</span>
                     {{ $title }}
                 </a>
+                @if ($new)
+                    <x-badge xs color="pink" light>NEW</x-badge>
+                @endif
             </h2>
             @endif
             @if (!$disableCopy)

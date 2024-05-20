@@ -80,8 +80,6 @@ class Reaction
     HTML;
 
     public const EVENTS = <<<'HTML'
-    <!-- The listener receive the uploaded file $event.detail.reaction -->
-
     <x-reaction x-on:react="alert(`Reacted: ${$event.detail.reaction.reaction}`)" />
     HTML;
 
