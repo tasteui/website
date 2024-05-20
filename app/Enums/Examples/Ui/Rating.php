@@ -101,8 +101,6 @@ class Rating
     HTML;
 
     public const EVENTS = <<<'HTML'
-    <!-- The listener receive the uploaded file $event.detail.evaluate -->
-
     <x-rating :rate="3" x-on:evaluate="alert(`Evaluated: ${JSON.stringify($event.detail.evaluate)}`)" />
     HTML;
 

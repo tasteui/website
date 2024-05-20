@@ -106,7 +106,8 @@
         "3": "Prefix",
         "4": "Clear",
         "5": "Masks",
-        "6": "Invalidate"
+        "6": "Events",
+        "7": "Invalidate"
     },
     "docs.form.upload": {
         "Upload": {
@@ -140,8 +141,9 @@
         "7": "Disable Dates",
         "8": "Range Mode",
         "9": "Multiple Mode",
-        "10": "Events",
-        "11": "Invalidate"
+        "10": "Month Year Only",
+        "11": "Events",
+        "12": "Invalidate"
     },
     "docs.form.time": {
         "1": "Basic Usage",

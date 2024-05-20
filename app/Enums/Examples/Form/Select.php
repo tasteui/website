@@ -125,9 +125,6 @@ class Select
     HTML;
 
     public const STYLED_EVENTS = <<<'HTML'
-    <!-- Select: receive the select object in $event.detail.select -->
-    <!-- Remove: receive the removed object in $event.detail.select -->
-
     <x-select.styled :options="[
         ['label' => 'TALL', 'value' => 1],
         ['label' => 'LIVT', 'value' => 2],
