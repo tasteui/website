@@ -36,6 +36,7 @@ use App\Enums\Examples\Ui\Alert;
 use App\Enums\Examples\Ui\Avatar;
 use App\Enums\Examples\Ui\Badge;
 use App\Enums\Examples\Ui\Banner;
+use App\Enums\Examples\Ui\Boolean;
 use App\Enums\Examples\Ui\Button;
 use App\Enums\Examples\Ui\Card;
 use App\Enums\Examples\Ui\Clipboard;
@@ -67,6 +68,7 @@ enum Example: string
     case Avatar = Avatar::class;
     case Badge = Badge::class;
     case Banner = Banner::class;
+    case Boolean = Boolean::class;
     case Button = Button::class;
     case Card = Card::class;
     case Checkbox = Checkbox::class;
