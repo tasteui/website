@@ -113,6 +113,9 @@
                             <x-layout.navigation.link :href="route('documentation.ui.banner')" text="Banner" />
                         </li>
                         <li class="relative ml-4">
+                            <x-layout.navigation.link :href="route('documentation.ui.boolean')" text="Boolean" new />
+                        </li>
+                        <li class="relative ml-4">
                             <x-layout.navigation.link :href="route('documentation.ui.button')" text="Button" />
                         </li>
                         <li class="relative ml-4">

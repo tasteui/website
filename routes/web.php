@@ -52,6 +52,7 @@ Route::prefix('/docs')
                 })->name('avatar');
                 Route::view('/badge', 'documentation.ui.badge', Example::Badge->variables())->name('badge');
                 Route::view('/banner', 'documentation.ui.banner', Example::Banner->variables())->name('banner');
+                Route::view('/boolean', 'documentation.ui.boolean', Example::Boolean->variables())->name('boolean');
                 Route::view('/button', 'documentation.ui.button', Example::Button->variables())->name('button');
                 Route::view('/card', 'documentation.ui.card', Example::Card->variables())->name('card');
                 Route::view('/clipboard', 'documentation.ui.clipboard', Example::Clipboard->variables())->name('clipboard');
