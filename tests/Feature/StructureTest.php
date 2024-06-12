@@ -34,7 +34,7 @@ test('cannot not use dangerous functions in Blade files', function () {
 test('test', function (string $route) {
     $this->get($route)->dump();
 })->with([
-    fn () => route('documentation.get-started'),
+    fn () => route('documentation.form.input'),
 ]);
 
 test('can access all routes', function (string $route) {
