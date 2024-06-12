@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers\Documentation;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Contracts\View\View;
 
-class Internal extends Controller
+class Internal
 {
     // It actually is related with `error` component.
     public function index(): View

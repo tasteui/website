@@ -1,6 +1,7 @@
 <?php
 
 use Database\Seeders\CreateUserSeeder;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Http;
 
 beforeEach(function () {
@@ -15,6 +16,20 @@ test('cannot use dangerous functions')
     ->expect(['dd', 'dump', 'var_dump', 'exit'])
     ->not
     ->toBeUsed();
+
+test('cannot not use dangerous functions in Blade files', function () {
+    $files = collect(File::allFiles(base_path('resources/views/')))
+        ->map(fn (SplFileInfo $file) => ['name' => $file->getFilename(), 'content' => file_get_contents($file->getRealPath())])
+        ->filter(fn (array $file) => str($file['content'])->contains(['@dd', '@dump']))
+        ->pluck('name')
+        ->implode(', ');
+
+    if (! empty($files)) {
+        test()->fail("The following files contain dangerous functions: [{$files}]"); // @phpstan-ignore-line
+    }
+
+    expect($files)->toBeEmpty();
+});
 
 test('can access all routes', function (string $route) {
     $this->get($route)->assertOk();
