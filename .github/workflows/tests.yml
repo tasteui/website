@@ -7,8 +7,6 @@ on:
   pull_request:
     branches:
       - 1.x
-  schedule:
-    - cron: '0 0 * * *'
 
   workflow_dispatch:
 
