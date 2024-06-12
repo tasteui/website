@@ -34,7 +34,7 @@
     </x-section>
     <x-section title="Resize Auto" description="An option to auto increase the size of textarea.">
         <x-preview language="blade" :contents="$resizeAuto">
-            <x-textarea :rows="1" resize-auto />
+            <x-textarea resize-auto />
         </x-preview>
     </x-section>
     <x-section title="Character Count" description="An option to show the number of characters.">
