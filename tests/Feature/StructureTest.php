@@ -31,14 +31,8 @@ test('cannot not use dangerous functions in Blade files', function () {
     expect($files)->toBeEmpty();
 });
 
-test('test', function (string $route) {
-    $this->get($route)->dump();
-})->with([
-    fn () => route('documentation.form.input'),
-]);
-
 test('can access all routes', function (string $route) {
-    $this->get($route)->dump();
+    $this->get($route)->assertOk();
 })->with([
     fn () => route('documentation.get-started'),
     fn () => route('documentation.installation'),
@@ -111,4 +105,4 @@ test('can access all routes', function (string $route) {
     fn () => route('documentation.integrations.alpine'),
     //
     fn () => route('documentation.contribution'),
-])->skip();
+]);
