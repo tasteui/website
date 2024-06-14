@@ -50,11 +50,29 @@
     </x-section>
     <x-section title="Background Blur">
         <x-preview language="blade" :contents="$blur">
-            <x-modal id="blur-modal" title="TallStackUI" blur>
-                TallStackUi
+            <x-modal id="blur-modal-sm" title="TallStackUI" blur>
+                SM
             </x-modal>
-            <x-button x-on:click="$modalOpen('blur-modal')">
-                Open Modal
+            <x-modal id="blur-modal-md" title="TallStackUI" blur="md">
+                MD
+            </x-modal>
+            <x-modal id="blur-modal-lg" title="TallStackUI" blur="lg">
+                LG
+            </x-modal>
+            <x-modal id="blur-modal-xl" title="TallStackUI" blur="xl">
+                XL
+            </x-modal>
+            <x-button x-on:click="$modalOpen('blur-modal-sm')">
+                SM
+            </x-button>
+            <x-button x-on:click="$modalOpen('blur-modal-md')">
+                MD
+            </x-button>
+            <x-button x-on:click="$modalOpen('blur-modal-lg')">
+                LG
+            </x-button>
+            <x-button x-on:click="$modalOpen('blur-modal-xl')">
+                XL
             </x-button>
         </x-preview>
     </x-section>

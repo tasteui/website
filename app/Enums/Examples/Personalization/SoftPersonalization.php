@@ -251,6 +251,28 @@ class SoftPersonalization
     </x-alert>
     HTML;
 
+    public const SCOPED_PERSONALIZATION_WITH_CLASS_BLADE_EXAMPLE = <<<'HTML'
+    <x-alert :personalize="\App\ScopedPersonalization\Alert::class" />
+    HTML;
+
+    public const SCOPED_PERSONALIZATION_WITH_CLASS_PHP_EXAMPLE = <<<'HTML'
+    namespace App\ScopedPersonalization;
+    
+    class Alert
+    {
+        public function __invoke(array $classes): array
+        {
+            return [
+                'wrapper' => [
+                    'replace' => [
+                        'rounded-lg' => 'rounded-full',
+                    ],
+                ],
+            ];
+        }    
+    }
+    HTML;
+
     public const DATA = <<<'HTML'
     [
       "id" => null
