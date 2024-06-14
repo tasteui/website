@@ -41,7 +41,9 @@ class Modal
     HTML;
 
     public const BLUR = <<<'HTML'
-    <x-modal title="TallStackUi" blur>
+    <!-- sm, md, lg, xl -->
+    
+    <x-modal title="TallStackUi" blur> <!-- sm blur -->
         TallStackUi
     </x-modal>
     HTML;

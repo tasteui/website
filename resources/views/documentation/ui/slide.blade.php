@@ -60,11 +60,29 @@
     </x-section>
     <x-section title="Background Blur">
         <x-preview language="blade" :contents="$blur">
-            <x-slide id="background-blur-slide" blur>
-                TallStackUi
+            <x-slide id="blur-slide-sm" title="TallStackUI" blur>
+                SM
             </x-slide>
-            <x-button x-on:click="$slideOpen('background-blur-slide')">
-                Open Slide
+            <x-slide id="blur-slide-md" title="TallStackUI" blur="md">
+                MD
+            </x-slide>
+            <x-slide id="blur-slide-lg" title="TallStackUI" blur="lg">
+                LG
+            </x-slide>
+            <x-slide id="blur-slide-xl" title="TallStackUI" blur="xl">
+                XL
+            </x-slide>
+            <x-button x-on:click="$slideOpen('blur-slide-sm')">
+                SM
+            </x-button>
+            <x-button x-on:click="$slideOpen('blur-slide-md')">
+                MD
+            </x-button>
+            <x-button x-on:click="$slideOpen('blur-slide-lg')">
+                LG
+            </x-button>
+            <x-button x-on:click="$slideOpen('blur-slide-xl')">
+                XL
             </x-button>
         </x-preview>
     </x-section>
