@@ -19,6 +19,7 @@ use App\Enums\Examples\Form\Toggle;
 use App\Enums\Examples\Form\Upload;
 use App\Enums\Examples\Form\WithoutLivewire;
 use App\Enums\Examples\Others\Alpine;
+use App\Enums\Examples\Others\Command;
 use App\Enums\Examples\Others\Configuration;
 use App\Enums\Examples\Others\Contribution;
 use App\Enums\Examples\Others\DarkTheme;
@@ -77,6 +78,7 @@ enum Example: string
     case ColorPersonalization = ColorPersonalization::class;
     case Configuration = Configuration::class;
     case Contribution = Contribution::class;
+    case Command = Command::class;
     case Date = Date::class;
     case DarkTheme = DarkTheme::class;
     case DebugMode = DebugMode::class;

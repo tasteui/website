@@ -92,6 +92,7 @@ test('can access all routes', function (string $route) {
     fn () => route('documentation.internal.wrapper'),
     //
     fn () => route('documentation.configuration'),
+    fn () => route('documentation.command'),
     fn () => route('documentation.translation'),
     fn () => route('documentation.without-livewire'),
     //
