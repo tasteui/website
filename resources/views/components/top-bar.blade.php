@@ -1,5 +1,5 @@
 <x-banner :color="['background' => 'bg-pink-900', 'text' => 'text-white']"
-          :until="now()->addWeek()">
-    <b>New version 1.30.0 is now available</b> 🎉
-    <a class="underline" href="{{ route('documentation.command').'#find-component' }}" wire:navigate>Introducing a useful command to search for component usage.</a>
+          :until="now()->addDays(2)">
+    <b>Version 1.32.0 is here</b> 🎉
+    <a class="underline" href="{{ route('documentation.ui.button').'#normal-flat-variations' }}">Introduced Flat buttons, for normal and circle buttons.</a>
 </x-banner>
