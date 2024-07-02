@@ -1,4 +1,9 @@
-@props(['text' => null, 'href' => null, 'activated' => null, 'new' => false])
+@props([
+    'text' => null,
+    'href' => null,
+    'activated' => null,
+    'new' => false
+])
 
 @php
     use Illuminate\Support\Facades\Route;
@@ -10,7 +15,7 @@
         'transition inline-flex items-center gap-x-2',
         'text-gray-500 dark:text-gray-400' => ! $activated,
         'text-pink-700 dark:text-pink-500' => $activated,
-    ]) }}>
+    ]) }} wire:navigate>
     @if ($activated)
         <x-icon name="arrow-small-right"
                 class="h-4 w-3" />
