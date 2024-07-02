@@ -39,19 +39,19 @@ class Button
     </x-button>
     HTML;
 
-    public const ICONS = <<<'HTML'
+    public const ICON = <<<'HTML'
     <x-button icon="cog" position="left">TallStackUi</x-button>
     <x-button icon="users" position="right">TallStackUi</x-button>
     HTML;
 
-    public const SIZES = <<<'HTML'
+    public const SIZE = <<<'HTML'
     <x-button xs>TallStackUi</x-button>
     <x-button sm>TallStackUi</x-button>
     <x-button md>TallStackUi</x-button>
     <x-button lg>TallStackUi</x-button>
     HTML;
 
-    public const LOADINGS = <<<'HTML'
+    public const LOADING = <<<'HTML'
     <x-button wire:click="target" loading>
         Basic
     </x-button>
@@ -69,7 +69,7 @@ class Button
     </x-button>
     HTML;
 
-    public const COLORS = <<<'HTML'
+    public const COLOR = <<<'HTML'
     <x-button text="Primary" />
     <x-button text="Secondary" color="secondary" />
     <x-button text="Slate" color="slate" />
@@ -98,7 +98,7 @@ class Button
     <x-button text="White" color="white" />
     HTML;
 
-    public const OUTLINES = <<<'HTML'
+    public const OUTLINE = <<<'HTML'
     <x-button text="Primary" outline />
     <x-button text="Secondary" color="secondary" outline />
     <x-button text="Slate" color="slate" outline />
@@ -127,7 +127,7 @@ class Button
     <x-button text="White" color="white" outline />
     HTML;
 
-    public const LIGHTS = <<<'HTML'
+    public const LIGHT = <<<'HTML'
     <x-button text="Primary" light />
     <x-button text="Secondary" color="secondary" light />
     <x-button text="Slate" color="slate" light />
@@ -156,6 +156,35 @@ class Button
     <x-button text="White" color="white" light />
     HTML;
 
+    public const FLAT = <<<'HTML'
+    <x-button text="Primary" flat />
+    <x-button text="Secondary" color="secondary" flat />
+    <x-button text="Slate" color="slate" flat />
+    <x-button text="Gray" color="gray" flat />
+    <x-button text="Zinc" color="zinc" flat />
+    <x-button text="Neutral" color="neutral" flat />
+    <x-button text="Stone" color="stone" flat />
+    <x-button text="Red" color="red" flat />
+    <x-button text="Orange" color="orange" flat />
+    <x-button text="Amber" color="amber" flat />
+    <x-button text="Yellow" color="yellow" flat />
+    <x-button text="Lime" color="lime" flat />
+    <x-button text="Green" color="green" flat />
+    <x-button text="Emerald" color="emerald" flat />
+    <x-button text="Teal" color="teal" flat />
+    <x-button text="Cyan" color="cyan" flat />
+    <x-button text="Sky" color="sky" flat />
+    <x-button text="Blue" color="blue" flat />
+    <x-button text="Indigo" color="indigo" flat />
+    <x-button text="Violet" color="violet" flat />
+    <x-button text="Purple" color="purple" flat />
+    <x-button text="Fuchsia" color="fuchsia" flat />
+    <x-button text="Pink" color="pink" flat />
+    <x-button text="Rose" color="rose" flat />
+    <x-button text="Black" color="black" flat />
+    <x-button text="White" color="white" flat />
+    HTML;
+
     public const CIRCLE = <<<'HTML'
     <x-button.circle>TS</x-button.circle>
 
@@ -168,17 +197,17 @@ class Button
     <x-button.circle href="https://google.com.br" target="_blank">TS</x-button.circle>
     HTML;
 
-    public const CIRCLE_ICONS = <<<'HTML'
+    public const CIRCLE_ICON = <<<'HTML'
     <x-button.circle icon="pencil" />
     HTML;
 
-    public const CIRCLE_SIZES = <<<'HTML'
+    public const CIRCLE_SIZE = <<<'HTML'
     <x-button.circle text="SM" sm/>
     <x-button.circle text="MD" />
     <x-button.circle text="LG" lg/>
     HTML;
 
-    public const CIRCLE_LOADINGS = <<<'HTML'
+    public const CIRCLE_LOADING = <<<'HTML'
     <x-button.circle wire:click="basic" icon="pencil" loading />
 
     <!-- You can specify the target of the delay (method or property) -->
@@ -195,7 +224,7 @@ class Button
                      delay="longest" />
     HTML;
 
-    public const CIRCLE_COLORS = <<<'HTML'
+    public const CIRCLE_COLOR = <<<'HTML'
     <x-button.circle text="TS" />
     <x-button.circle text="TS" color="secondary" />
     <x-button.circle text="TS" color="slate" />
@@ -224,7 +253,7 @@ class Button
     <x-button.circle text="TS" color="white" />
     HTML;
 
-    public const CIRCLE_OUTLINES = <<<'HTML'
+    public const CIRCLE_OUTLINE = <<<'HTML'
     <x-button.circle text="TS" outline />
     <x-button.circle text="TS" color="secondary" outline />
     <x-button.circle text="TS" color="slate" outline />
@@ -253,7 +282,7 @@ class Button
     <x-button.circle text="TS" color="white" outline />
     HTML;
 
-    public const CIRCLE_LIGHTS = <<<'HTML'
+    public const CIRCLE_LIGHT = <<<'HTML'
     <x-button.circle text="TS" light />
     <x-button.circle text="TS" color="secondary" light />
     <x-button.circle text="TS" color="slate" light />
@@ -280,6 +309,35 @@ class Button
     <x-button.circle text="TS" color="rose" light />
     <x-button.circle text="TS" color="black" light />
     <x-button.circle text="TS" color="white" light />
+    HTML;
+
+    public const CIRCLE_FLAT = <<<'HTML'
+    <x-button.circle text="TS" flat />
+    <x-button.circle text="TS" color="secondary" flat />
+    <x-button.circle text="TS" color="slate" flat />
+    <x-button.circle text="TS" color="gray" flat />
+    <x-button.circle text="TS" color="zinc" flat />
+    <x-button.circle text="TS" color="neutral" flat />
+    <x-button.circle text="TS" color="stone" flat />
+    <x-button.circle text="TS" color="red" flat />
+    <x-button.circle text="TS" color="orange" flat />
+    <x-button.circle text="TS" color="amber" flat />
+    <x-button.circle text="TS" color="yellow" flat />
+    <x-button.circle text="TS" color="lime" flat />
+    <x-button.circle text="TS" color="green" flat />
+    <x-button.circle text="TS" color="emerald" flat />
+    <x-button.circle text="TS" color="teal" flat />
+    <x-button.circle text="TS" color="cyan" flat />
+    <x-button.circle text="TS" color="sky" flat />
+    <x-button.circle text="TS" color="blue" flat />
+    <x-button.circle text="TS" color="indigo" flat />
+    <x-button.circle text="TS" color="violet" flat />
+    <x-button.circle text="TS" color="purple" flat />
+    <x-button.circle text="TS" color="fuchsia" flat />
+    <x-button.circle text="TS" color="pink" flat />
+    <x-button.circle text="TS" color="rose" flat />
+    <x-button.circle text="TS" color="black" flat />
+    <x-button.circle text="TS" color="white" flat />
     HTML;
 
     public const PERSONALIZATION = <<<'HTML'
