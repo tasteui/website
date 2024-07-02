@@ -14,14 +14,14 @@
     </x-section>
     <x-section title="Setup Icons" disable-copy>
         <p>
-            Command to setup icons. <a class="underline" href="{{ route('documentation.ui.icon') }}">
+            Command to setup icons. <a class="underline" href="{{ route('documentation.ui.icon') }}" wire:navigate>
                 See the details of the command and how to use it by clicking here.
             </a>
         </p>
     </x-section>
     <x-section title="Setup Prefix" disable-copy>
         <p>
-            Command to setup prefix. <a class="underline" href="{{ route('documentation.installation').'#component-prefix' }}">
+            Command to setup prefix. <a class="underline" href="{{ route('documentation.installation').'#component-prefix' }}" wire:navigate>
                 See the details of the command and how to use it by clicking here.
             </a>
         </p>

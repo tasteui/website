@@ -229,7 +229,8 @@
                 "7": "Loading Effect",
                 "8": "Color Variations",
                 "9": "Light Variations",
-                "10": "Outline Variations"
+                "10": "Outline Variations",
+                "11": "Flat Variations"
             }
         },
         "Circle": {
@@ -244,7 +245,8 @@
                 "6": "Loading Effect",
                 "7": "Color Variations",
                 "8": "Light Variations",
-                "9": "Outline Variations"
+                "9": "Outline Variations",
+                "10": "Flat Variations"
             }
         }
     },
