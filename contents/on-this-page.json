@@ -312,7 +312,8 @@
         "3": "Target Blank & Style Options",
         "4": "Query String & Fragment Options",
         "5": "Color Variations",
-        "6": "Without Color"
+        "6": "Without Color",
+        "7": "Livewire SPA Navigation"
     },
     "docs.ui.loading": {
         "0": "Concept",

@@ -113,6 +113,19 @@ class Link
             :color="null" />
     HTML;
 
+    public const NAVIGATE = <<<'HTML'
+    <!-- For `wire:navigate` -->
+    <x-link :href="route('route-name-goes-here')" 
+            text="Navigate" 
+            navigate />
+
+    <!-- For `wire:navigate.hover` -->
+    <x-link :href="route('route-name-goes-here')" 
+            text="Navigate Hover" 
+            navigate-hover />
+    HTML;
+
+
     public const PERSONALIZATION = <<<'HTML'
     TallStackUi::personalize()
         ->link()
