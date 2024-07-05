@@ -10,13 +10,12 @@ class Link
     </x-link>
 
     <!-- or -->
+
     <x-link href="https://google.com.br"
             text="TallStackUI" />
 
-    <!--
-        As a normal Blade component,
-        you can also pass variables for href.
-    -->
+    <!-- As a normal Blade component,
+    you can also pass variables for href. -->
     <x-link :href="route('welcome')"
             text="TallStackUI" />
     HTML;
@@ -26,9 +25,10 @@ class Link
             text="TallStackUI"
             sm />
 
+    <!-- default size -->
     <x-link href="https://google.com.br/"
             text="TallStackUI"
-            md /> <!-- default size -->
+            md />
 
     <x-link href="https://google.com.br/"
             text="TallStackUI"
