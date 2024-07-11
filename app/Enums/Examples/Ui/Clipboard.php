@@ -19,9 +19,7 @@ class Clipboard
     HTML;
 
     public const LABEL_HINT = <<<'HTML'
-    <x-clipboard label="Library"
-                 hint="Click to copy the library name"
-                 text="TallStackUI" />
+    <x-clipboard label="Library" hint="Click to copy the library name" text="TallStackUI" />
     HTML;
 
     public const SECRET = <<<'HTML'

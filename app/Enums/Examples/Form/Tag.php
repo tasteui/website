@@ -9,14 +9,11 @@ class Tag
     HTML;
 
     public const LABEL_HINT = <<<'HTML'
-    <x-tag label="Frameworks"
-           hint="Select your preferred frameworks" />
+    <x-tag label="Frameworks" hint="Select your preferred frameworks" />
     HTML;
 
     public const LIMIT = <<<'HTML'
-    <x-tag label="Frameworks"
-           hint="Select your preferred frameworks"
-           :limit="2" />
+    <x-tag label="Frameworks" hint="Select your preferred frameworks" :limit="2" />
     HTML;
 
     public const PREFIX = <<<'HTML'

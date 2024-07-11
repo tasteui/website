@@ -14,9 +14,7 @@ class Boolean
     HTML;
 
     public const ICONS = <<<'HTML'
-    <x-boolean :boolean="$trueOrFalse"
-               icon-when-true="hand-thumb-up"
-               icon-when-false="hand-thumb-down" />
+    <x-boolean :boolean="$trueOrFalse" icon-when-true="hand-thumb-up" icon-when-false="hand-thumb-down" />
     HTML;
 
     public const COLORS = <<<'HTML'

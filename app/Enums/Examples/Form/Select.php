@@ -11,9 +11,7 @@ class Select
     HTML;
 
     public const NATIVE_LABEL_HINT = <<<'HTML'
-    <x-select.native label="Select One Option"
-                     hint="You can choose 1, 2 or 3"
-                     :options="[1,2,3]" />
+    <x-select.native label="Select One Option" hint="You can choose 1, 2 or 3" :options="[1,2,3]" />
     HTML;
 
     public const NATIVE_ADVANCED = <<<'HTML'

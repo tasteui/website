@@ -9,8 +9,7 @@ class Number
     HTML;
 
     public const LABEL_HINT = <<<'HTML'
-    <x-number label="Quantity"
-              hint="Press the plus button to increase one by one" />
+    <x-number label="Quantity" hint="Press the plus button to increase one by one" />
     HTML;
 
     public const MIN_MAX = <<<'HTML'

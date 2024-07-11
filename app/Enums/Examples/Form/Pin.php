@@ -9,9 +9,7 @@ class Pin
     HTML;
 
     public const LABEL_HINT = <<<'HTML'
-    <x-pin length="5"
-           label="Insert the code"
-           hint="We sent a 5-digit code to your email." />
+    <x-pin length="5" label="Insert the code" hint="We sent a 5-digit code to your email." />
     HTML;
 
     public const PREFIX = <<<'HTML'

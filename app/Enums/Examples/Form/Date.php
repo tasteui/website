@@ -36,8 +36,7 @@ class Date
     public const MIN_MAX_DATES = <<<'HTML'
     <!-- You can use dates as strings or Carbon instances -->
     
-    <x-date :min-date="now()->subWeek()" 
-            :max-date="now()->addWeek()" />
+    <x-date :min-date="now()->subWeek()" :max-date="now()->addWeek()" />
     HTML;
 
     public const MIN_MAX_YEARS = <<<'HTML'

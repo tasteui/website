@@ -9,8 +9,7 @@ class Color
     HTML;
 
     public const LABEL_HINT = <<<'HTML'
-    <x-color label="Color"
-             hint="Select your favorite color or insert a hexadecimal value." />
+    <x-color label="Color" hint="Select your favorite color or insert a hexadecimal value." />
     HTML;
 
     public const PICKER = <<<'HTML'

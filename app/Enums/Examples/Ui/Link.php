@@ -23,55 +23,34 @@ class Link
     HTML;
 
     public const SIZES = <<<'HTML'
-    <x-link href="https://google.com.br/"
-            text="TallStackUI"
-            sm />
+    <x-link href="https://google.com.br/" text="TallStackUI" sm />
 
     <!-- default size -->
-    <x-link href="https://google.com.br/"
-            text="TallStackUI"
-            md />
+    <x-link href="https://google.com.br/" text="TallStackUI" md />
 
-    <x-link href="https://google.com.br/"
-            text="TallStackUI"
-            lg />
+    <x-link href="https://google.com.br/" text="TallStackUI" lg />
     HTML;
 
     public const ICONS = <<<'HTML'
-    <x-link href="https://google.com.br/"
-            text="TallStackUI"
-            icon="link" />
+    <x-link href="https://google.com.br/" text="TallStackUI" icon="link" />
 
-    <x-link href="https://google.com.br/"
-            text="TallStackUI"
-            icon="arrow-up-right"
-            position="right" />
+    <x-link href="https://google.com.br/" text="TallStackUI" icon="arrow-up-right" position="right" />
     HTML;
 
     public const BLANK_BOLD_UNDERLINE = <<<'HTML'
-    <x-link href="https://google.com.br/"
-            text="TallStackUI"
-            blank />
+    <x-link href="https://google.com.br/" text="TallStackUI" blank />
 
-    <x-link href="https://google.com.br/"
-            text="TallStackUI"
-            bold />
+    <x-link href="https://google.com.br/" text="TallStackUI" bold />
 
-    <x-link href="https://google.com.br/"
-            text="TallStackUI"
-            underline />
+    <x-link href="https://google.com.br/" text="TallStackUI" underline />
     HTML;
 
     public const QUERY_FRAGMENT = <<<'HTML'
     <!-- The "query" accepts an array or an instance of Collection. -->
 
-    <x-link href="https://google.com.br/"
-            text="TallStackUI"
-            :query="['status' => 'active']" />
+    <x-link href="https://google.com.br/" text="TallStackUI" :query="['status' => 'active']" />
 
-    <x-link href="https://google.com.br/"
-            text="TallStackUI"
-            fragment="query-string-fragment-options" />
+    <x-link href="https://google.com.br/" text="TallStackUI" fragment="query-string-fragment-options" />
     HTML;
 
     public const COLORS = <<<'HTML'
@@ -104,27 +83,19 @@ class Link
     HTML;
 
     public const WITHOUT_COLOR = <<<'HTML'
-    <x-link href="https://google.com.br/"
-            text="TallStackUI"
-            colorless />
+    <x-link href="https://google.com.br/" text="TallStackUI" colorless />
 
     <!-- or -->
 
-    <x-link href="https://google.com.br/"
-            text="TallStackUI"
-            :color="null" />
+    <x-link href="https://google.com.br/" text="TallStackUI" :color="null" />
     HTML;
 
     public const NAVIGATE = <<<'HTML'
     <!-- For `wire:navigate` -->
-    <x-link :href="route('route-name-goes-here')" 
-            text="Navigate" 
-            navigate />
+    <x-link :href="route('route-name-goes-here')" text="Navigate" navigate />
 
     <!-- For `wire:navigate.hover` -->
-    <x-link :href="route('route-name-goes-here')" 
-            text="Navigate Hover" 
-            navigate-hover />
+    <x-link :href="route('route-name-goes-here')" text="Navigate Hover" navigate-hover />
     HTML;
 
     public const PERSONALIZATION = <<<'HTML'
