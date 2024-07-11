@@ -19,7 +19,7 @@ class Link
 
     <!-- When text, slot, or icon is not set
     the href link will be used to be displayed as the text -->
-    <x-link href="https://tallstackui" />
+    <x-link href="https://tallstackui.com/docs/ui/link" />
     HTML;
 
     public const SIZES = <<<'HTML'
