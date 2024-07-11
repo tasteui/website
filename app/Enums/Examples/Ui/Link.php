@@ -127,7 +127,6 @@ class Link
             navigate-hover />
     HTML;
 
-
     public const PERSONALIZATION = <<<'HTML'
     TallStackUi::personalize()
         ->link()
