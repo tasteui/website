@@ -17,9 +17,12 @@
     </x-slot:personalization>
     <x-section title="Basic Usage">
         <x-preview language="blade" :contents="$basic">
-            <x-link :href="route('documentation.ui.link')">
-                TallStackUI
-            </x-link>
+            <div class="flex flex-col">
+                <x-link :href="route('documentation.ui.link')">
+                    TallStackUI
+                </x-link>
+                <x-link :href="route('documentation.ui.link')" />
+            </div>
         </x-preview>
         <x-warning class="mt-4">
             The href attribute will be mandatory unless the fragment is defined.

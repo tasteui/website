@@ -11,13 +11,15 @@ class Link
 
     <!-- or -->
 
-    <x-link href="https://google.com.br"
-            text="TallStackUI" />
+    <x-link href="https://google.com.br" text="TallStackUI" />
 
     <!-- As a normal Blade component,
     you can also pass variables for href. -->
-    <x-link :href="route('welcome')"
-            text="TallStackUI" />
+    <x-link :href="route('welcome')" text="TallStackUI" />
+
+    <!-- When text, slot, or icon is not set
+    the href link will be used to be displayed as the text -->
+    <x-link href="https://tallstackui" />
     HTML;
 
     public const SIZES = <<<'HTML'
