@@ -21,18 +21,16 @@
             In the modern world many applications have blogs, posts or articles. This
             way they need to capture the reaction of their readers to feel how welcome
             or hated that content was. The reaction component is the combination of
-            the <a href="{{ route('documentation.ui.tooltip') }}" class="underline">Tooltip</a>
+            the <a href="{{ route('documentation.ui.tooltip') }}" wire:navigate class="underline">Tooltip</a>
             component with emoji icons offered by the
             <a href="https://googlefonts.github.io/noto-emoji-animation/" target="_blank" class="underline">Noto Emoji Animation project.</a>
         </p>
     </x-section>
-    <x-section title="Persist Reactions" disable-copy>
+    <x-section title="Persist Reaction" disable-copy>
         <p>
             The logic for persisting the reaction in a database, such as SQL, SQLite or Redis (cache)
-            is up to its own algorithm. <b>If, for example, you don't create logic, especially one that
-            blocks many reactions from the same authenticated user, the user will react unlimitedly.</b>
-            When an emoji is pressed, the <x-block>react</x-block> method is triggered, receiving the name of the reaction
-            as a parameter.
+            is up to its own algorithm. When an emoji is pressed, the <x-block>react</x-block> method
+            is triggered, receiving the name of the reaction as a parameter.
         </p>
         <div class="mt-4">
             <x-code :contents="$method" />

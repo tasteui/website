@@ -17,9 +17,12 @@
     </x-slot:personalization>
     <x-section title="Basic Usage">
         <x-preview language="blade" :contents="$basic">
-            <x-link :href="route('documentation.ui.link')">
-                TallStackUI
-            </x-link>
+            <div class="flex flex-col">
+                <x-link :href="route('documentation.ui.link')">
+                    TallStackUI
+                </x-link>
+                <x-link :href="route('documentation.ui.link')" />
+            </div>
         </x-preview>
         <x-warning class="mt-4">
             The href attribute will be mandatory unless the fragment is defined.
@@ -102,6 +105,14 @@
         <x-preview language="blade" :contents="$withoutColor">
             <div class="flex flex-col gap-x-2">
                 <x-link :href="route('documentation.ui.link')" text="TallStackUI" colorless />
+            </div>
+        </x-preview>
+    </x-section>
+    <x-section title="Livewire SPA Navigation" description="An option to easily add Livewire 3 navigation effects in SPA mode." new>
+        <x-preview language="blade" :contents="$navigate">
+            <div class="flex flex-col gap-x-2">
+                <x-link :href="route('documentation.ui.link')" text="Navigate" navigate />
+                <x-link :href="route('documentation.ui.link')" text="Navigate Hover" navigate-hover />
             </div>
         </x-preview>
     </x-section>

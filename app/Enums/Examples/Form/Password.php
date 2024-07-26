@@ -9,15 +9,18 @@ class Password
     HTML;
 
     public const LABEL_HINT = <<<'HTML'
-    <x-password label="Password"
-                hint="Insert your best password"
-                value="TallStackUi" />
+    <x-password label="Password" hint="Insert your best password" value="TallStackUi" />
     HTML;
 
     public const ASTERISK = <<<'HTML'
-    <x-password label="Password *"
-                hint="Insert your password"
-                value="TallStackUi" />
+    <x-password label="Password *" hint="Insert your password" value="TallStackUi" />
+    HTML;
+
+    public const CAPS_LOCK = <<<'HTML'
+    <x-password hint="Activate caps lock to see the indicator." />
+
+    <!-- To disable and do not show the indicator use `mixed-case` -->
+    <x-password hint="Activate caps lock to see the indicator." mixed-case />
     HTML;
 
     public const FORMAT_VALIDATOR = <<<'HTML'

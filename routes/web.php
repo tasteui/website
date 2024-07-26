@@ -52,6 +52,7 @@ Route::prefix('/docs')
                 })->name('avatar');
                 Route::view('/badge', 'documentation.ui.badge', Example::Badge->variables())->name('badge');
                 Route::view('/banner', 'documentation.ui.banner', Example::Banner->variables())->name('banner');
+                Route::view('/boolean', 'documentation.ui.boolean', Example::Boolean->variables())->name('boolean');
                 Route::view('/button', 'documentation.ui.button', Example::Button->variables())->name('button');
                 Route::view('/card', 'documentation.ui.card', Example::Card->variables())->name('card');
                 Route::view('/clipboard', 'documentation.ui.clipboard', Example::Clipboard->variables())->name('clipboard');
@@ -63,6 +64,7 @@ Route::prefix('/docs')
                 Route::view('/loading', 'documentation.ui.loading', Example::Loading->variables())->name('loading');
                 Route::view('/progress', 'documentation.ui.progress', Example::Progress->variables())->name('progress');
                 Route::view('/reaction', 'documentation.ui.reaction', Example::Reaction->variables())->name('reaction');
+                Route::view('/rating', 'documentation.ui.rating', Example::Rating->variables())->name('rating');
                 Route::view('/slide', 'documentation.ui.slide', Example::Slide->variables())->name('slide');
                 Route::view('/stats', 'documentation.ui.stats', Example::Stats->variables())->name('stats');
                 Route::view('/step', 'documentation.ui.step', Example::Step->variables())->name('step');
@@ -92,6 +94,7 @@ Route::prefix('/docs')
 
         Route::view('/dark-theme', 'documentation.helpers.dark-theme', Example::DarkTheme->variables())->name('dark-theme');
         Route::view('/configuration', 'documentation.configuration', Example::Configuration->variables())->name('configuration');
+        Route::view('/command', 'documentation.command', Example::Command->variables())->name('command');
         Route::view('/translation', 'documentation.translation', Example::Translation->variables())->name('translation');
         Route::view('/without-livewire', 'documentation.without-livewire', Example::WithoutLivewire->variables())->name('without-livewire');
         Route::view('/contribution', 'documentation.contribution', Example::Contribution->variables())->name('contribution');

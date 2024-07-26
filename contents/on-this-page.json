@@ -23,10 +23,11 @@
         "0": "Basic Usage",
         "1": "Label & Hint",
         "2": "Required Label Indicator",
-        "3": "Format Validator",
-        "4": "Password Generator",
-        "5": "Events",
-        "6": "Invalidate"
+        "3": "Caps Lock Indicator",
+        "4": "Format Validator",
+        "5": "Password Generator",
+        "6": "Events",
+        "7": "Invalidate"
     },
     "docs.form.color": {
         "0": "Basic Usage",
@@ -53,7 +54,8 @@
         "2": "Required Label Indicator",
         "3": "Resize",
         "4": "Resize Auto",
-        "5": "Invalidate"
+        "5": "Character Count",
+        "6": "Invalidate"
     },
     "docs.form.checkbox": {
         "0": "Basic Usage",
@@ -104,7 +106,8 @@
         "3": "Prefix",
         "4": "Clear",
         "5": "Masks",
-        "6": "Invalidate"
+        "6": "Events",
+        "7": "Invalidate"
     },
     "docs.form.upload": {
         "Upload": {
@@ -138,8 +141,9 @@
         "7": "Disable Dates",
         "8": "Range Mode",
         "9": "Multiple Mode",
-        "10": "Events",
-        "11": "Invalidate"
+        "10": "Month Year Only",
+        "11": "Events",
+        "12": "Invalidate"
     },
     "docs.form.time": {
         "1": "Basic Usage",
@@ -206,7 +210,8 @@
                 "0": "Concept",
                 "1": "Usage",
                 "2": "Available Options",
-                "3": "Example"
+                "3": "Example",
+                "4": "Display After Redirects"
             }
         }
     },
@@ -224,7 +229,8 @@
                 "7": "Loading Effect",
                 "8": "Color Variations",
                 "9": "Light Variations",
-                "10": "Outline Variations"
+                "10": "Outline Variations",
+                "11": "Flat Variations"
             }
         },
         "Circle": {
@@ -239,7 +245,8 @@
                 "6": "Loading Effect",
                 "7": "Color Variations",
                 "8": "Light Variations",
-                "9": "Outline Variations"
+                "9": "Outline Variations",
+                "10": "Flat Variations"
             }
         }
     },
@@ -305,7 +312,8 @@
         "3": "Target Blank & Style Options",
         "4": "Query String & Fragment Options",
         "5": "Color Variations",
-        "6": "Without Color"
+        "6": "Without Color",
+        "7": "Livewire SPA Navigation"
     },
     "docs.ui.loading": {
         "0": "Concept",
@@ -343,13 +351,24 @@
     },
     "docs.ui.reaction": {
         "0": "Concept",
-        "1": "Persist Reactions",
+        "1": "Persist Reaction",
         "3": "Basic Usage",
         "4": "Animated Style",
         "5": "Tooltip Position",
         "6": "Quantity Slot",
         "7": "Using Less Icons",
-        "8": "Slot"
+        "8": "Slot",
+        "9": "Events"
+    },
+    "docs.ui.rating": {
+        "0": "Concept",
+        "1": "Persist Rating",
+        "3": "Basic Usage",
+        "4": "Rating Quantity",
+        "5": "Text",
+        "6": "Size Variations",
+        "7": "Color Variations",
+        "8": "Events"
     },
     "docs.form.select": {
         "Native": {
@@ -466,7 +485,8 @@
         "4": "Events",
         "5": "JavaScript API",
         "6": "Color Personalization",
-        "7": "Configurations"
+        "7": "Display After Redirects",
+        "8": "Configurations"
     },
     "docs.interaction.toast": {
         "0": "Configuration",
@@ -477,7 +497,8 @@
         "5": "Events",
         "6": "JavaScript API",
         "7": "Color Personalization",
-        "8": "Configurations"
+        "8": "Display After Redirects",
+        "9": "Configurations"
     },
     "docs.configuration": {
         "0": "Configuration File",

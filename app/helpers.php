@@ -10,11 +10,12 @@ if (! function_exists('apply_prefix')) {
         }
 
         return collect($data)
-            ->filter(fn ($value) => is_string($value))
-            ->filter(fn ($value) => str_contains($value, '<x-'))
+            ->filter(fn (mixed $value) => is_string($value))
+            ->filter(fn (string $value) => str_contains($value, '<x-'))
             ->mapWithKeys(function (string $value, string $key) use ($prefix) {
-                $value = str_replace('<x-', "<x-{$prefix}", $value);
-                $value = str_replace('</x-', "</x-{$prefix}", $value);
+                $value = preg_replace_callback('/(<\/?x-(?!slot:))([^>]*>)/', function (array $matches) use ($prefix) {
+                    return "{$matches[1]}{$prefix}{$matches[2]}";
+                }, $value);
 
                 return [$key => $value];
             })

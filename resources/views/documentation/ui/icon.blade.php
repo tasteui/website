@@ -16,7 +16,7 @@
             only around 300 icons. Due to many requests, <u>starting from version 1.20, TallStackUI now supports three
             icon libraries,</u> offering more than 10K icons. A small change needs to be
             made so that you can use the new supported icon libraries, this change must be made in the
-            <a href="{{ route('documentation.configuration') }}" class="underline">configuration file.</a>
+            <a href="{{ route('documentation.configuration') }}" wire:navigate class="underline">configuration file.</a>
         </p>
         <div class="mt-4">
             <p>This is the <b class="underline">old icon configuration</b> in the configuration file <b>before v1.20:</b></p>
@@ -38,6 +38,7 @@
             <li><a href="https://heroicons.com/" target="_blank">Heroicons</a></li>
             <li><a href="https://phosphoricons.com/" target="_blank">PhosphorIcons</a></li>
             <li><a href="https://fonts.google.com/icons" target="_blank">Google Material Design Icons</a></li>
+            <li><a href="https://tabler.io/icons" target="_blank">TablerIcons</a></li>
         </ul>
     </x-section>
     <x-section title="Setup Icons" disable-copy>
@@ -56,7 +57,7 @@
                 the production environment. To avoid this manual work, you can add this
                 instruction to a Composer hook:
             </p>
-            <x-code language="json" :contents="$composerHook" />
+            <x-code language="json" :contents="$composerHook" disable-copy />
             <p>
                 Using this approach, every time you run the <x-block>composer install</x-block>
                 or <x-block>composer update</x-block> commands, the icon library will be downloaded

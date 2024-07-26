@@ -26,6 +26,9 @@ class Icon
     <x-icon name="group-tt" />
     <x-icon name="group-s" />
     <x-icon name="group-r" />
+
+    <!-- TablerIcons, only support outline -->
+    <x-icon name="users" />
     HTML;
 
     public const LEFT_RIGHT = <<<'HTML'
@@ -65,9 +68,9 @@ class Icon
         |----------------------------------
         | Default and in-use icon type.
         |----------------------------------
-        | Allowed: heroicons, phosphoricons, google.
+        | Allowed: heroicons, phosphoricons, google, tablericons.
         */
-        'type' => 'heroicons',
+        'type' => env('TALLSTACKUI_ICON_TYPE', 'heroicons'),
 
         /*
         |----------------------------------
@@ -78,8 +81,9 @@ class Icon
         | Heroicons: solid, outline
         | Phosphoricons: thin, light, regular, bold, duotone
         | Google: default
+        | Tablericons: default
         */
-        'style' => 'solid',
+        'style' => env('TALLSTACKUI_ICON_STYLE', 'solid'),
 
         /*
         |----------------------------------
@@ -106,10 +110,10 @@ class Icon
         |----------------------------------
         | Default and in-use icon type.
         |----------------------------------
-        | Allowed: heroicons, phosphoricons, google. [tl! highlight]
+        | Allowed: heroicons, phosphoricons, google, tablericons. [tl! highlight]
         */
-        'type' => 'heroicons', // [tl! remove]
-        'type' => 'phosphoricons', // [tl! add]
+        'type' => env('TALLSTACKUI_ICON_TYPE', 'heroicons'), // [tl! remove]
+        'type' => env('TALLSTACKUI_ICON_TYPE', 'phosphoricons'), // [tl! add]
 
         /*
         |----------------------------------
@@ -120,9 +124,10 @@ class Icon
         | Heroicons: solid, outline
         | Phosphoricons: thin, light, regular, bold, duotone [tl! highlight]
         | Google: default
+        | Tablericons: default
         */
-        'style' => 'solid', // [tl! remove]
-        'style' => 'regular', // [tl! add]
+        'style' => env('TALLSTACKUI_ICON_STYLE', 'solid'), // [tl! remove]
+        'style' => env('TALLSTACKUI_ICON_STYLE', 'regular'), // [tl! add]
 
         // ...
     ],
@@ -133,15 +138,12 @@ class Icon
     HTML;
 
     public const COMPOSER_HOOK = <<<'HTML'
-    // ...
-    
     "scripts": {
-        "post-update-cmd": [
-            "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
-            "@php artisan tallstackui:setup-icon --force --ansi", // [tl! add]
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi",
+            "@php artisan tallstackui:setup-icon --force --ansi" // [tl! add]
         ],
-    },
-
-    // ...
+    }
     HTML;
 }

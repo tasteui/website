@@ -1,3 +1,6 @@
-<x-banner :color="['background' => 'bg-pink-900', 'text' => 'text-white']" until="2024-03-20">
-    The <a href="{{ route('documentation.summer-release') }}" class="underline">summer release is here</a> 🏖 A big release with lots of new features.
+<x-banner :color="['background' => 'bg-pink-900', 'text' => 'text-white']" :until="now()">
+    <b>Version 1.33.0 released</b> 🎉
+    <a href="https://github.com/tailwindlabs/heroicons/releases/tag/v2.1.5" target="_blank">
+        <u class="font-semibold">We've updated Heroicons to version 2.1.5</u>, which adds some new icons.
+    </a>
 </x-banner>

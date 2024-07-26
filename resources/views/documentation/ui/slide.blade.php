@@ -60,11 +60,29 @@
     </x-section>
     <x-section title="Background Blur">
         <x-preview language="blade" :contents="$blur">
-            <x-slide id="background-blur-slide" blur>
-                TallStackUi
+            <x-slide id="blur-slide-sm" title="TallStackUI" blur>
+                SM
             </x-slide>
-            <x-button x-on:click="$slideOpen('background-blur-slide')">
-                Open Slide
+            <x-slide id="blur-slide-md" title="TallStackUI" blur="md">
+                MD
+            </x-slide>
+            <x-slide id="blur-slide-lg" title="TallStackUI" blur="lg">
+                LG
+            </x-slide>
+            <x-slide id="blur-slide-xl" title="TallStackUI" blur="xl">
+                XL
+            </x-slide>
+            <x-button x-on:click="$slideOpen('blur-slide-sm')">
+                SM
+            </x-button>
+            <x-button x-on:click="$slideOpen('blur-slide-md')">
+                MD
+            </x-button>
+            <x-button x-on:click="$slideOpen('blur-slide-lg')">
+                LG
+            </x-button>
+            <x-button x-on:click="$slideOpen('blur-slide-xl')">
+                XL
             </x-button>
         </x-preview>
     </x-section>
@@ -161,12 +179,12 @@
         </x-preview>
     </x-section>
     <x-warning text="Make sure to provide some way to close the slide when using this option, such as a button within the slide." />
-    <x-section class="mt-4" title="Wireable" description="An option to control the modal via Livewire.">
+    <x-section class="mt-4" title="Wireable" description="An option to control the slide via Livewire.">
         <x-preview language="blade" :contents="$wireable">
             <livewire:documentation.slide.entangle/>
         </x-preview>
     </x-section>
-    <x-section title="Wireable Personalized" description="Customize which property to use to control the modal via Livewire.">
+    <x-section title="Wireable Personalized" description="Customize which property to use to control the slide via Livewire.">
         <x-preview language="blade" :contents="$wireableCustomized">
             <livewire:documentation.slide.customentangle/>
         </x-preview>

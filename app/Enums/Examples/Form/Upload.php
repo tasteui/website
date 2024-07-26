@@ -9,9 +9,7 @@ class Upload
     HTML;
 
     public const LABEL_HINT_TIP = <<<'HTML'
-    <x-upload label="Screenshot"
-              hint="We need to analyze your screenshot"
-              tip="Drag and drop your screenshot here" />
+    <x-upload label="Screenshot" hint="We need to analyze your screenshot" tip="Drag and drop your screenshot here" />
     HTML;
 
     public const DELETE = <<<'HTML'
@@ -146,10 +144,8 @@ class Upload
     HTML;
 
     public const EVENTS = <<<'HTML'
-    <!-- The listener receive the uploaded file $event.detail.files -->
     <x-upload x-on:upload="console.log($event.detail.files)" />
     
-    <!-- The listener receive the uploaded file $event.detail.file -->
     <x-upload delete x-on:remove="console.log($event.detail.file)" />
     HTML;
 

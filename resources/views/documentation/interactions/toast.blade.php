@@ -42,7 +42,7 @@
             <livewire:documentation.interactions.toast.timeout/>
         </x-preview>
         <p class="mt-2">
-            <u>Starting from version 1.14.2</u>, you can set a default timeout through <a href="{{ route('documentation.configuration') }}" class="underline">configuration file:</a>
+            <u>Starting from version 1.14.2</u>, you can set a default timeout through <a href="{{ route('documentation.configuration') }}" wire:navigate class="underline">configuration file:</a>
         </p>
         <x-code :contents="$defaultTime" disable-copy />
     </x-section>
@@ -51,7 +51,7 @@
             <livewire:documentation.interactions.toast.expandable/>
         </x-preview>
         <p class="mt-2">
-            You can configure Toast to be extensible by default in <a href="{{ route('documentation.configuration') }}" class="underline">the configuration file.</a> When you
+            You can configure Toast to be extensible by default in <a href="{{ route('documentation.configuration') }}" wire:navigate class="underline">the configuration file.</a> When you
             do that, you can optionally ignore the expandable for specific Toast:
         </p>
         <x-code :contents="$ignoringExpandable" disable-copy />
@@ -75,6 +75,18 @@
                     underline>
                 Starting from version 1.5.3 you can customize Toast colors through deep personalization.
             </x-link>
+        </p>
+    </x-section>
+    <x-section title="Display After Redirects">
+        <p>
+            <u>Starting from version 1.23.0</u> you can trigger a toast that will actually
+            be displayed after a redirect action. Regardless of whether the redirection is
+            to another Livewire component or to basic controllers, you can still display the toast.
+        </p>
+        <x-code :contents="$flash"/>
+        <p>
+            When using <x-block>flash()</x-block> method, the toast will not be displayed in the current
+            request, but yes stored temporarily in the session and displayed in the next request.
         </p>
     </x-section>
     <x-available-configuration />

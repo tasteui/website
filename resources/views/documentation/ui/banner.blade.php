@@ -82,4 +82,16 @@
             <livewire:documentation.interactions.banner.examples />
         </x-preview>
     </x-section>
+    <x-section title="Display After Redirects" anchor="livewire-integration-display-after-redirects">
+        <p>
+            <u>Starting from version 1.23.0</u> you can trigger a banner that will actually
+            be displayed after a redirect action. Regardless of whether the redirection is
+            to another Livewire component or to basic controllers, you can still display the banner.
+        </p>
+        <x-code :contents="$flash"/>
+        <p>
+            When using <x-block>flash()</x-block> method, the banner will not be displayed in the current
+            request, but yes stored temporarily in the session and displayed in the next request.
+        </p>
+    </x-section>
 </x-layout>

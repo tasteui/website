@@ -34,7 +34,15 @@
     </x-section>
     <x-section title="Resize Auto" description="An option to auto increase the size of textarea.">
         <x-preview language="blade" :contents="$resizeAuto">
-            <x-textarea :rows="1" resize-auto />
+            <x-textarea resize-auto />
+        </x-preview>
+    </x-section>
+    <x-section title="Character Count" description="An option to show the number of characters.">
+        <x-preview language="blade" :contents="$count">
+            <div class="mb-2 space-y-2">
+                <x-textarea label="Current and Max Quantities" maxlength="10" count />
+                <x-textarea label="Only Current Quantity" count />
+            </div>
         </x-preview>
     </x-section>
     <x-section title="Invalidate" description="An option to not show validation error message.">

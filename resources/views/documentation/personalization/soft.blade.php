@@ -20,7 +20,7 @@
     <x-section title="Example of Component Structure" disable-copy>
         <div class="mb-4 inline-flex items-center gap-1">
             <p>
-                Example of the <a class="underline" href="{{ route('documentation.ui.avatar') }}">Avatar</a> component classes
+                Example of the <a href="{{ route('documentation.ui.avatar') }}" wire:navigate class="underline">Avatar</a> component classes
                 <x-outdated-contente-tooltip />
             </p>
         </div>
@@ -147,6 +147,20 @@
             in the block name or wrong block name, the application will not generate a visual
             error for the end user, the personalization will just not be applied.
         </x-warning>
+        <p class="mt-2">
+            <u>Starting from version 1.30.0</u> you can pass a class name that contains a <x-block>__invoke</x-block> public method
+            to the <x-block>personalize</x-block> attribute to make the personalization more organized and reusable.
+            Let's take a look at an example:
+        </p>
+        <p class="mt-2">Blade:</p>
+        <x-code language="blade" :contents="$scopedPersonalizationWithClassBladeExample" disable-copy/>
+        <p>PHP:</p>
+        <x-code :contents="$scopedPersonalizationWithClassPhpExample" disable-copy/>
+        <p>
+            You may have noticed that in the example above we have an array called <x-block>$classes</x-block> as
+            the parameter of the <x-block>__invoke</x-block> method, this array is an array with all classes that
+            came from the original personalization defined to the component.
+        </p>
     </x-section>
     <x-section title="Tracing TailwindCSS Classes" disable-copy>
         <p class="mb-4">

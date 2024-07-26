@@ -53,7 +53,7 @@
         </x-preview>
     </x-section>
     <x-section title="Icon Slot" anchor="normal-icon-slot" description="An option to use any Heroicon.">
-        <x-preview language="blade" :contents="$icons">
+        <x-preview language="blade" :contents="$icon">
             <div class="inline-flex space-x-2">
                 <x-button icon="cog" position="left">TallStackUi</x-button>
                 <x-button icon="users" position="right">TallStackUi</x-button>
@@ -61,7 +61,7 @@
         </x-preview>
     </x-section>
     <x-section title="Size Variations" anchor="normal-size-variations">
-        <x-preview language="blade" :contents="$sizes">
+        <x-preview language="blade" :contents="$size">
             <div class="flex flex-col items-center justify-center space-y-2 sm:space-x-2 sm:space-y-0 sm:flex-row sm:justify-start">
                 <div>
                     <x-button xs>TallStackUi</x-button>
@@ -79,7 +79,7 @@
         </x-preview>
     </x-section>
     <x-section title="Loading Effect" anchor="normal-loading-effect">
-        <x-preview language="blade" :contents="$loadings">
+        <x-preview language="blade" :contents="$loading">
             <div class="flex flex-col items-center justify-center space-y-2 sm:space-x-2 sm:space-y-0 sm:flex-row sm:justify-start">
                 <div>
                     <livewire:documentation.ui.button :model="1" />
@@ -94,7 +94,7 @@
         </x-preview>
     </x-section>
     <x-section title="Color Variations" anchor="normal-color-variations">
-        <x-preview language="blade" :contents="$colors">
+        <x-preview language="blade" :contents="$color">
             <div class="gap-2 space-y-2">
                 <x-button text="Primary" />
                 <x-button text="Secondary" color="secondary" />
@@ -126,7 +126,7 @@
         </x-preview>
     </x-section>
     <x-section title="Light Variations" anchor="normal-light-variations">
-        <x-preview language="blade" :contents="$lights">
+        <x-preview language="blade" :contents="$light">
             <div class="gap-2 space-y-2">
                 <x-button text="Primary" light />
                 <x-button text="Secondary" color="secondary" light />
@@ -158,7 +158,7 @@
         </x-preview>
     </x-section>
     <x-section title="Outline Variations" anchor="normal-outline-variations">
-        <x-preview language="blade" :contents="$outlines">
+        <x-preview language="blade" :contents="$outline">
             <div class="gap-2 space-y-2">
                 <x-button text="Primary" outline />
                 <x-button text="Secondary" color="secondary" outline />
@@ -189,26 +189,58 @@
             </div>
         </x-preview>
     </x-section>
+    <x-section title="Flat Variations" anchor="normal-flat-variations" new>
+        <x-preview language="blade" :contents="$flat">
+            <div class="gap-2 space-y-2">
+                <x-button text="Primary" flat />
+                <x-button text="Secondary" color="secondary" flat />
+                <x-button text="Slate" color="slate" flat />
+                <x-button text="Gray" color="gray" flat />
+                <x-button text="Zinc" color="zinc" flat />
+                <x-button text="Neutral" color="neutral" flat />
+                <x-button text="Stone" color="stone" flat />
+                <x-button text="Red" color="red" flat />
+                <x-button text="Orange" color="orange" flat />
+                <x-button text="Amber" color="amber" flat />
+                <x-button text="Yellow" color="yellow" flat />
+                <x-button text="Lime" color="lime" flat />
+                <x-button text="Green" color="green" flat />
+                <x-button text="Emerald" color="emerald" flat />
+                <x-button text="Teal" color="teal" flat />
+                <x-button text="Cyan" color="cyan" flat />
+                <x-button text="Sky" color="sky" flat />
+                <x-button text="Blue" color="blue" flat />
+                <x-button text="Indigo" color="indigo" flat />
+                <x-button text="Violet" color="violet" flat />
+                <x-button text="Purple" color="purple" flat />
+                <x-button text="Fuchsia" color="fuchsia" flat />
+                <x-button text="Pink" color="pink" flat />
+                <x-button text="Rose" color="rose" flat />
+                <x-button text="Black" color="black" flat />
+                <x-button text="White" color="white" flat />
+            </div>
+        </x-preview>
+    </x-section>
     <x-separator text="Circle" />
     <x-section title="Basic Usage" anchor="circle-basic-usage">
         <x-preview language="blade" :contents="$circle">
-            <x-button.circle>TS</x-button.circle>
+            <x-button.circle icon="users" />
         </x-preview>
     </x-section>
     <x-section title="Button as Link" anchor="circle-button-as-link">
         <x-preview language="blade" :contents="$circleA">
-            <x-button.circle href="https://google.com.br" target="_blank">TS</x-button.circle>
+            <x-button.circle href="https://google.com.br" target="_blank" icon="arrow-up-right" />
         </x-preview>
     </x-section>
     <x-section title="Icon Slot" anchor="circle-icon-slot" description="An option to use any Heroicon.">
-        <x-preview language="blade" :contents="$circleIcons">
+        <x-preview language="blade" :contents="$circleIcon">
             <x-button.circle icon="pencil"/>
         </x-preview>
     </x-section>
     <x-section title="Size Variations"
                anchor="circle-size-variations"
                description="An option to use any Heroicon.">
-        <x-preview language="blade" :contents="$circleSizes">
+        <x-preview language="blade" :contents="$circleSize">
             <x-button.circle icon="pencil" xs/>
             <x-button.circle icon="pencil" sm/>
             <x-button.circle icon="pencil" />
@@ -216,7 +248,7 @@
         </x-preview>
     </x-section>
     <x-section title="Loading Effect" anchor="circle-loading-effect">
-        <x-preview language="blade" :contents="$circleLoadings">
+        <x-preview language="blade" :contents="$circleLoading">
             <div class="inline-flex items-center space-x-2">
                 <livewire:documentation.ui.button :model="2" />
                 <livewire:documentation.ui.button :model="2" :type="2" />
@@ -225,98 +257,130 @@
         </x-preview>
     </x-section>
     <x-section title="Color Variations" anchor="circle-color-variations">
-        <x-preview language="blade" :contents="$circleColors">
+        <x-preview language="blade" :contents="$circleColor">
             <div class="gap-2 space-y-2">
-                <x-button.circle text="TS" />
-                <x-button.circle text="TS" color="secondary" />
-                <x-button.circle text="TS" color="slate" />
-                <x-button.circle text="TS" color="gray" />
-                <x-button.circle text="TS" color="zinc" />
-                <x-button.circle text="TS" color="neutral" />
-                <x-button.circle text="TS" color="stone" />
-                <x-button.circle text="TS" color="red" />
-                <x-button.circle text="TS" color="orange" />
-                <x-button.circle text="TS" color="amber" />
-                <x-button.circle text="TS" color="yellow" />
-                <x-button.circle text="TS" color="lime" />
-                <x-button.circle text="TS" color="green" />
-                <x-button.circle text="TS" color="emerald" />
-                <x-button.circle text="TS" color="teal" />
-                <x-button.circle text="TS" color="cyan" />
-                <x-button.circle text="TS" color="sky" />
-                <x-button.circle text="TS" color="blue" />
-                <x-button.circle text="TS" color="indigo" />
-                <x-button.circle text="TS" color="violet" />
-                <x-button.circle text="TS" color="purple" />
-                <x-button.circle text="TS" color="fuchsia" />
-                <x-button.circle text="TS" color="pink" />
-                <x-button.circle text="TS" color="rose" />
-                <x-button.circle text="TS" color="black" />
-                <x-button.circle text="TS" color="white" />
+                <x-button.circle icon="bookmark" />
+                <x-button.circle icon="bookmark" color="secondary" />
+                <x-button.circle icon="bookmark" color="slate" />
+                <x-button.circle icon="bookmark" color="gray" />
+                <x-button.circle icon="bookmark" color="zinc" />
+                <x-button.circle icon="bookmark" color="neutral" />
+                <x-button.circle icon="bookmark" color="stone" />
+                <x-button.circle icon="bookmark" color="red" />
+                <x-button.circle icon="bookmark" color="orange" />
+                <x-button.circle icon="bookmark" color="amber" />
+                <x-button.circle icon="bookmark" color="yellow" />
+                <x-button.circle icon="bookmark" color="lime" />
+                <x-button.circle icon="bookmark" color="green" />
+                <x-button.circle icon="bookmark" color="emerald" />
+                <x-button.circle icon="bookmark" color="teal" />
+                <x-button.circle icon="bookmark" color="cyan" />
+                <x-button.circle icon="bookmark" color="sky" />
+                <x-button.circle icon="bookmark" color="blue" />
+                <x-button.circle icon="bookmark" color="indigo" />
+                <x-button.circle icon="bookmark" color="violet" />
+                <x-button.circle icon="bookmark" color="purple" />
+                <x-button.circle icon="bookmark" color="fuchsia" />
+                <x-button.circle icon="bookmark" color="pink" />
+                <x-button.circle icon="bookmark" color="rose" />
+                <x-button.circle icon="bookmark" color="black" />
+                <x-button.circle icon="bookmark" color="white" />
             </div>
         </x-preview>
     </x-section>
     <x-section title="Light Variations" anchor="circle-light-variations">
-        <x-preview language="blade" :contents="$circleLights">
+        <x-preview language="blade" :contents="$circleLight">
             <div class="gap-2 space-y-2">
-                <x-button.circle text="TS" light />
-                <x-button.circle text="TS" color="secondary" light />
-                <x-button.circle text="TS" color="slate" light />
-                <x-button.circle text="TS" color="gray" light />
-                <x-button.circle text="TS" color="zinc" light />
-                <x-button.circle text="TS" color="neutral" light />
-                <x-button.circle text="TS" color="stone" light />
-                <x-button.circle text="TS" color="red" light />
-                <x-button.circle text="TS" color="orange" light />
-                <x-button.circle text="TS" color="amber" light />
-                <x-button.circle text="TS" color="yellow" light />
-                <x-button.circle text="TS" color="lime" light />
-                <x-button.circle text="TS" color="green" light />
-                <x-button.circle text="TS" color="emerald" light />
-                <x-button.circle text="TS" color="teal" light />
-                <x-button.circle text="TS" color="cyan" light />
-                <x-button.circle text="TS" color="sky" light />
-                <x-button.circle text="TS" color="blue" light />
-                <x-button.circle text="TS" color="indigo" light />
-                <x-button.circle text="TS" color="violet" light />
-                <x-button.circle text="TS" color="purple" light />
-                <x-button.circle text="TS" color="fuchsia" light />
-                <x-button.circle text="TS" color="pink" light />
-                <x-button.circle text="TS" color="rose" light />
-                <x-button.circle text="TS" color="black" light />
-                <x-button.circle text="TS" color="white" light />
+                <x-button.circle icon="bookmark" light />
+                <x-button.circle icon="bookmark" color="secondary" light />
+                <x-button.circle icon="bookmark" color="slate" light />
+                <x-button.circle icon="bookmark" color="gray" light />
+                <x-button.circle icon="bookmark" color="zinc" light />
+                <x-button.circle icon="bookmark" color="neutral" light />
+                <x-button.circle icon="bookmark" color="stone" light />
+                <x-button.circle icon="bookmark" color="red" light />
+                <x-button.circle icon="bookmark" color="orange" light />
+                <x-button.circle icon="bookmark" color="amber" light />
+                <x-button.circle icon="bookmark" color="yellow" light />
+                <x-button.circle icon="bookmark" color="lime" light />
+                <x-button.circle icon="bookmark" color="green" light />
+                <x-button.circle icon="bookmark" color="emerald" light />
+                <x-button.circle icon="bookmark" color="teal" light />
+                <x-button.circle icon="bookmark" color="cyan" light />
+                <x-button.circle icon="bookmark" color="sky" light />
+                <x-button.circle icon="bookmark" color="blue" light />
+                <x-button.circle icon="bookmark" color="indigo" light />
+                <x-button.circle icon="bookmark" color="violet" light />
+                <x-button.circle icon="bookmark" color="purple" light />
+                <x-button.circle icon="bookmark" color="fuchsia" light />
+                <x-button.circle icon="bookmark" color="pink" light />
+                <x-button.circle icon="bookmark" color="rose" light />
+                <x-button.circle icon="bookmark" color="black" light />
+                <x-button.circle icon="bookmark" color="white" light />
             </div>
         </x-preview>
     </x-section>
     <x-section title="Outline Variations" anchor="circle-outline-variations">
-        <x-preview language="blade" :contents="$circleOutlines">
+        <x-preview language="blade" :contents="$circleOutline">
             <div class="gap-2 space-y-2">
-                <x-button.circle text="TS" outline />
-                <x-button.circle text="TS" color="secondary" outline />
-                <x-button.circle text="TS" color="slate" outline />
-                <x-button.circle text="TS" color="gray" outline />
-                <x-button.circle text="TS" color="zinc" outline />
-                <x-button.circle text="TS" color="neutral" outline />
-                <x-button.circle text="TS" color="stone" outline />
-                <x-button.circle text="TS" color="red" outline />
-                <x-button.circle text="TS" color="orange" outline />
-                <x-button.circle text="TS" color="amber" outline />
-                <x-button.circle text="TS" color="yellow" outline />
-                <x-button.circle text="TS" color="lime" outline />
-                <x-button.circle text="TS" color="green" outline />
-                <x-button.circle text="TS" color="emerald" outline />
-                <x-button.circle text="TS" color="teal" outline />
-                <x-button.circle text="TS" color="cyan" outline />
-                <x-button.circle text="TS" color="sky" outline />
-                <x-button.circle text="TS" color="blue" outline />
-                <x-button.circle text="TS" color="indigo" outline />
-                <x-button.circle text="TS" color="violet" outline />
-                <x-button.circle text="TS" color="purple" outline />
-                <x-button.circle text="TS" color="fuchsia" outline />
-                <x-button.circle text="TS" color="pink" outline />
-                <x-button.circle text="TS" color="rose" outline />
-                <x-button.circle text="TS" color="black" outline />
-                <x-button.circle text="TS" color="white" outline />
+                <x-button.circle icon="bookmark" outline />
+                <x-button.circle icon="bookmark" color="secondary" outline />
+                <x-button.circle icon="bookmark" color="slate" outline />
+                <x-button.circle icon="bookmark" color="gray" outline />
+                <x-button.circle icon="bookmark" color="zinc" outline />
+                <x-button.circle icon="bookmark" color="neutral" outline />
+                <x-button.circle icon="bookmark" color="stone" outline />
+                <x-button.circle icon="bookmark" color="red" outline />
+                <x-button.circle icon="bookmark" color="orange" outline />
+                <x-button.circle icon="bookmark" color="amber" outline />
+                <x-button.circle icon="bookmark" color="yellow" outline />
+                <x-button.circle icon="bookmark" color="lime" outline />
+                <x-button.circle icon="bookmark" color="green" outline />
+                <x-button.circle icon="bookmark" color="emerald" outline />
+                <x-button.circle icon="bookmark" color="teal" outline />
+                <x-button.circle icon="bookmark" color="cyan" outline />
+                <x-button.circle icon="bookmark" color="sky" outline />
+                <x-button.circle icon="bookmark" color="blue" outline />
+                <x-button.circle icon="bookmark" color="indigo" outline />
+                <x-button.circle icon="bookmark" color="violet" outline />
+                <x-button.circle icon="bookmark" color="purple" outline />
+                <x-button.circle icon="bookmark" color="fuchsia" outline />
+                <x-button.circle icon="bookmark" color="pink" outline />
+                <x-button.circle icon="bookmark" color="rose" outline />
+                <x-button.circle icon="bookmark" color="black" outline />
+                <x-button.circle icon="bookmark" color="white" outline />
+            </div>
+        </x-preview>
+    </x-section>
+    <x-section title="Flat Variations" anchor="circle-flat-variations" new>
+        <x-preview language="blade" :contents="$circleFlat">
+            <div class="gap-2 space-y-2">
+                <x-button.circle icon="bookmark" flat />
+                <x-button.circle icon="bookmark" color="secondary" flat />
+                <x-button.circle icon="bookmark" color="slate" flat />
+                <x-button.circle icon="bookmark" color="gray" flat />
+                <x-button.circle icon="bookmark" color="zinc" flat />
+                <x-button.circle icon="bookmark" color="neutral" flat />
+                <x-button.circle icon="bookmark" color="stone" flat />
+                <x-button.circle icon="bookmark" color="red" flat />
+                <x-button.circle icon="bookmark" color="orange" flat />
+                <x-button.circle icon="bookmark" color="amber" flat />
+                <x-button.circle icon="bookmark" color="yellow" flat />
+                <x-button.circle icon="bookmark" color="lime" flat />
+                <x-button.circle icon="bookmark" color="green" flat />
+                <x-button.circle icon="bookmark" color="emerald" flat />
+                <x-button.circle icon="bookmark" color="teal" flat />
+                <x-button.circle icon="bookmark" color="cyan" flat />
+                <x-button.circle icon="bookmark" color="sky" flat />
+                <x-button.circle icon="bookmark" color="blue" flat />
+                <x-button.circle icon="bookmark" color="indigo" flat />
+                <x-button.circle icon="bookmark" color="violet" flat />
+                <x-button.circle icon="bookmark" color="purple" flat />
+                <x-button.circle icon="bookmark" color="fuchsia" flat />
+                <x-button.circle icon="bookmark" color="pink" flat />
+                <x-button.circle icon="bookmark" color="rose" flat />
+                <x-button.circle icon="bookmark" color="black" flat />
+                <x-button.circle icon="bookmark" color="white" flat />
             </div>
         </x-preview>
     </x-section>

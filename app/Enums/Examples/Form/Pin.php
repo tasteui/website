@@ -9,9 +9,7 @@ class Pin
     HTML;
 
     public const LABEL_HINT = <<<'HTML'
-    <x-pin length="5"
-           label="Insert the code"
-           hint="We sent a 5-digit code to your email." />
+    <x-pin length="5" label="Insert the code" hint="We sent a 5-digit code to your email." />
     HTML;
 
     public const PREFIX = <<<'HTML'
@@ -26,6 +24,12 @@ class Pin
     <x-pin length="5" label="Only Numbers" numbers />
 
     <x-pin length="5" label="Only Letters" letters />
+    HTML;
+
+    public const EVENTS = <<<'HTML'
+    <x-pin length="5" x-on:filled="alert(`Filled: ${$event.detail.model}`)" />
+    
+    <x-pin length="5" clear x-on:clear="alert(`Cleared: ${$event.detail.model}`)" />
     HTML;
 
     public const INVALIDATE = <<<'HTML'

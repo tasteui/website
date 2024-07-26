@@ -10,6 +10,7 @@ class Checkbox
 
     public const LABEL = <<<'HTML'
     <x-checkbox label="Receive Alert" />
+
     <x-checkbox label="Receive Alert" position="left" />
     HTML;
 

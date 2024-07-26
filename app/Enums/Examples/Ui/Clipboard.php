@@ -19,9 +19,7 @@ class Clipboard
     HTML;
 
     public const LABEL_HINT = <<<'HTML'
-    <x-clipboard label="Library"
-                 hint="Click to copy the library name"
-                 text="TallStackUI" />
+    <x-clipboard label="Library" hint="Click to copy the library name" text="TallStackUI" />
     HTML;
 
     public const SECRET = <<<'HTML'
@@ -29,8 +27,6 @@ class Clipboard
     HTML;
 
     public const EVENTS = <<<'HTML'
-    <!-- The listener receive the content copied in $event.detail.text -->
-
     <x-clipboard x-on:copy="alert(`Copied: ${$event.detail.text}`)">
         TallStackUi
     </x-clipboard>

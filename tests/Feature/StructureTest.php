@@ -1,6 +1,7 @@
 <?php
 
 use Database\Seeders\CreateUserSeeder;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Http;
 
 beforeEach(function () {
@@ -15,6 +16,20 @@ test('cannot use dangerous functions')
     ->expect(['dd', 'dump', 'var_dump', 'exit'])
     ->not
     ->toBeUsed();
+
+test('cannot not use dangerous functions in Blade files', function () {
+    $files = collect(File::allFiles(base_path('resources/views/')))
+        ->map(fn (SplFileInfo $file) => ['name' => $file->getFilename(), 'content' => file_get_contents($file->getRealPath())])
+        ->filter(fn (array $file) => str($file['content'])->contains(['@dd', '@dump']))
+        ->pluck('name')
+        ->implode(', ');
+
+    if (! empty($files)) {
+        test()->fail("The following files contain dangerous functions: [{$files}]"); // @phpstan-ignore-line
+    }
+
+    expect($files)->toBeEmpty();
+});
 
 test('can access all routes', function (string $route) {
     $this->get($route)->assertOk();
@@ -46,6 +61,7 @@ test('can access all routes', function (string $route) {
     fn () => route('documentation.ui.avatar'),
     fn () => route('documentation.ui.badge'),
     fn () => route('documentation.ui.banner'),
+    fn () => route('documentation.ui.boolean'),
     fn () => route('documentation.ui.button'),
     fn () => route('documentation.ui.card'),
     fn () => route('documentation.ui.clipboard'),
@@ -57,6 +73,7 @@ test('can access all routes', function (string $route) {
     fn () => route('documentation.ui.loading'),
     fn () => route('documentation.ui.progress'),
     fn () => route('documentation.ui.reaction'),
+    fn () => route('documentation.ui.rating'),
     fn () => route('documentation.ui.slide'),
     fn () => route('documentation.ui.stats'),
     fn () => route('documentation.ui.step'),
@@ -75,6 +92,7 @@ test('can access all routes', function (string $route) {
     fn () => route('documentation.internal.wrapper'),
     //
     fn () => route('documentation.configuration'),
+    fn () => route('documentation.command'),
     fn () => route('documentation.translation'),
     fn () => route('documentation.without-livewire'),
     //

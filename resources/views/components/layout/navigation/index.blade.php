@@ -113,6 +113,9 @@
                             <x-layout.navigation.link :href="route('documentation.ui.banner')" text="Banner" />
                         </li>
                         <li class="relative ml-4">
+                            <x-layout.navigation.link :href="route('documentation.ui.boolean')" text="Boolean" />
+                        </li>
+                        <li class="relative ml-4">
                             <x-layout.navigation.link :href="route('documentation.ui.button')" text="Button" />
                         </li>
                         <li class="relative ml-4">
@@ -140,10 +143,13 @@
                             <x-layout.navigation.link :href="route('documentation.ui.loading')" text="Loading" />
                         </li>
                         <li class="relative ml-4">
-                            <x-layout.navigation.link :href="route('documentation.ui.progress')" text="Progress" new />
+                            <x-layout.navigation.link :href="route('documentation.ui.progress')" text="Progress" />
                         </li>
                         <li class="relative ml-4">
                             <x-layout.navigation.link :href="route('documentation.ui.reaction')" text="Reaction" />
+                        </li>
+                        <li class="relative ml-4">
+                            <x-layout.navigation.link :href="route('documentation.ui.rating')" text="Rating" />
                         </li>
                         <li class="relative ml-4">
                             <x-layout.navigation.link :href="route('documentation.ui.slide')" text="Slide" />
@@ -206,6 +212,9 @@
             <ul role="list" class="mt-4 space-y-2 dark:border-slate-800 lg:space-y-4 lg:mt-4 lg:border-slate-200">
                 <li class="relative ml-4">
                     <x-layout.navigation.link :href="route('documentation.configuration')" text="Configurations" />
+                </li>
+                <li class="relative ml-4">
+                    <x-layout.navigation.link :href="route('documentation.command')" text="Commands" new />
                 </li>
                 <li class="relative ml-4">
                     <x-layout.navigation.link :href="route('documentation.translation')" text="Translations" />

@@ -47,7 +47,9 @@ class Slide
     HTML;
 
     public const BLUR = <<<'HTML'
-    <x-slide blur>
+    <!-- sm, md, lg, xl -->
+    
+    <x-slide blur> <!-- sm blur -->
         TallStackUi
     </x-slide>
     HTML;

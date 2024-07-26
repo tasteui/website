@@ -24,6 +24,14 @@ class Textarea
     <x-textarea label="Name" hint="Insert the description" />
     HTML;
 
+    public const COUNT = <<<'HTML'
+    <!-- Current and Max Quantities-->
+    <x-textarea maxlength="10" count />
+    
+    <!-- Only Current Quantity-->
+    <x-textarea count />
+    HTML;
+
     public const INVALIDATE = <<<'HTML'
     <x-textarea label="Name" hint="Insert the description" invalidate />
     HTML;
