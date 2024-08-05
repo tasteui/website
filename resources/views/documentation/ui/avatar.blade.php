@@ -94,7 +94,7 @@
             </div>
         </x-preview>
     </x-section>
-    <x-section title="Borderless" description="An option to remove the default border.">
+    <x-section title="Borderless" description="An option to remove the default border." new>
         <x-preview language="blade" :contents="$borderless">
             <x-avatar color="primary" borderless />
         </x-preview>
@@ -141,7 +141,7 @@
         </x-preview>
     </x-section>
     <x-separator text="Image" />
-    <x-section title="Image" description="An option to use an image as avatar.">
+    <x-section title="Image" description="An option to use an image as avatar." new>
         <x-preview language="blade" :contents="$image">
             <x-avatar image="https://aj.dev.br/assets/images/aj.jpg" xs />
             <x-avatar image="https://aj.dev.br/assets/images/aj.jpg" sm />
@@ -149,7 +149,7 @@
             <x-avatar image="https://aj.dev.br/assets/images/aj.jpg" lg />
         </x-preview>
     </x-section>
-    <x-section title="Default Alt Text">
+    <x-section title="Default Alt Text" new>
         <x-preview language="blade" :contents="$imageAlt">
             <x-avatar image="https://aj.dev.br/assets/images/aj.jpg"
                       text="Taylor Otwell, Creator of Laravel" />
