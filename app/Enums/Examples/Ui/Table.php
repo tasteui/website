@@ -61,6 +61,8 @@ class Table
                 'headers' => [
                     ['index' => 'id', 'label' => '#'],
                     ['index' => 'name', 'label' => 'Member'],
+                    // You can use `unescaped` to render raw HTML  // [tl! highlight:1]
+                    ['index' => 'role', 'label' => '<b>Role</b>', 'unescaped' => true],
                 ],
                 'rows' => User::all(),
             ];
@@ -306,6 +308,30 @@ class Table
             Raw Footer Slot
         </x-slot:footer>
     </x-table>
+    HTML;
+
+    public const SELECTABLE = <<<'HTML'
+    <!-- This is a resumed example without the full explanation -->
+    
+    <!-- You need to create a public array property in the component to store 
+    the selected rows. In this example we are using the `selected` property, 
+    but you can choose any name, as long as it is an array. -->
+
+    <x-table ... selectable wire:model="selected" />
+    HTML;
+
+    public const CLICKABLE = <<<'HTML'
+    <!-- This is a resumed example without the full explanation -->
+
+    <x-table ... link="https://google.com.br/?user={id}" />
+    
+    <x-table ... link="https://google.com.br/?user={name}" />
+    
+    <!-- Using dot notation to use relationship data: -->
+    <x-table ... link="https://google.com.br/?postcode={address.postcode}" />
+
+    <!-- You can use blank to open the link in a new tab -->
+    <x-table ... link="https://google.com.br/?user={id}" blank />
     HTML;
 
     public const COLUMNS = <<<'HTML'

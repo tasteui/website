@@ -59,6 +59,7 @@
         "ci": [
             "./vendor/bin/pint --test",
             "./vendor/bin/pest --type-coverage",
+            "@php artisan route:list",
             "./vendor/bin/pest"
         ]
     },

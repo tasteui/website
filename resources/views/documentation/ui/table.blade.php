@@ -23,7 +23,7 @@
     <x-section title="Concept" disable-copy>
         <p>
             Although many packages can add table features to your project, <u>starting from
-                version 1.6.0</u> of TallStackUI you can take advantage of the simple table component,
+            version 1.6.0</u> of TallStackUI you can take advantage of the simple table component,
             but with all the basic features necessary for a table to work through Livewire components.
         </p>
     </x-section>
@@ -81,6 +81,16 @@
     <x-section title="Slots">
         <x-preview language="blade" :contents="$slots" :background="false">
             <livewire:documentation.ui.table :mode="8" />
+        </x-preview>
+    </x-section>
+    <x-section title="Selection" new>
+        <x-preview language="blade" :contents="$selectable" :background="false">
+            <livewire:documentation.ui.table :mode="9" />
+        </x-preview>
+    </x-section>
+    <x-section title="Clickable" new>
+        <x-preview language="blade" :contents="$clickable" :background="false">
+            <livewire:documentation.ui.table :mode="10" />
         </x-preview>
     </x-section>
     <x-section title="Interacting With Data" disable-copy>

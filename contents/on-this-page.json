@@ -173,10 +173,9 @@
         "2": "Size Variations",
         "3": "Square Variations",
         "4": "Placeholder",
-        "5": "Modelable",
-        "6": "Modelable Custom Property",
-        "7": "Customizing Colors",
-        "8": "Other Options"
+        "5": "Borderless",
+        "6": "Modelable",
+        "7": "Image"
     },
     "docs.ui.badge": {
         "0": "Basic Usage",
@@ -461,7 +460,9 @@
         "7": "Sorting",
         "8": "Pagination",
         "9": "Slots",
-        "10": "Interacting With Data"
+        "10": "Selection",
+        "11": "Clickable",
+        "12": "Interacting With Data"
     },
     "docs.ui.theme-switch": {
         "0": "Concept",
