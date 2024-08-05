@@ -89,10 +89,10 @@
                                                     <x-button :href="route('documentation.get-started')"
                                                               color="pink"
                                                               position="right"
+                                                              wire:navigate
                                                               lg>
                                                         Get Started
                                                     </x-button>
-                                                    {{-- workaround... --}}
                                                     <div class="block dark:hidden">
                                                         <x-button href="https://github.com/tallstackui/tallstackui"
                                                                   target="_blank"
