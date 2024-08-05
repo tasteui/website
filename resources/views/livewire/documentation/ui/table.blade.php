@@ -14,6 +14,8 @@ new class extends Component {
 
     public ?string $search = null;
 
+    public array $selected = [1,2,3,4,5];
+
     public array $sort = [
         'column' => 'id',
         'direction' => 'desc',
@@ -21,7 +23,7 @@ new class extends Component {
 
     public function boot(): void
     {
-        $this->quantity = in_array($this->mode, [4, 5, 7, 8]) ? 2 : 10;
+        $this->quantity = in_array($this->mode, [4, 5, 7, 8]) ? 2 : 11;
     }
 
     public function updatingQuantity(): void
@@ -67,5 +69,9 @@ new class extends Component {
         <x-table :$headers :$rows paginate persistent id="demo"/>
     @elseif ($mode === 8)
         <x-table :$headers :$rows paginate header="Header Slot" footer="Footer Slot" />
+    @elseif ($mode === 9)
+        <x-table :$headers :$rows :$sort selectable wire:model="selected" />
+    @elseif ($mode === 10)
+        <x-table :$headers :$rows link="https://google.com.br/?users={id}" blank />
     @endif
 </div>

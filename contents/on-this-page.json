@@ -460,7 +460,9 @@
         "7": "Sorting",
         "8": "Pagination",
         "9": "Slots",
-        "10": "Interacting With Data"
+        "10": "Selection",
+        "11": "Clickable",
+        "12": "Interacting With Data"
     },
     "docs.ui.theme-switch": {
         "0": "Concept",
