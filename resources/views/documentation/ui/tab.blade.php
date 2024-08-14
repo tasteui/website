@@ -51,7 +51,7 @@
             </x-tab>
         </x-preview>
     </x-section>
-    <x-section title="Events">
+    <x-section title="Events" new>
         <x-preview language="blade" :background="false" :contents="$events">
             <x-tab selected="Invoices" x-on:navigate="alert($event.detail.select)">
                 <x-tab.items tab="Invoices">

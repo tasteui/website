@@ -36,7 +36,8 @@
         "3": "Selectable",
         "4": "Custom Colors",
         "5": "Events",
-        "6": "Invalidate"
+        "6": "Invalidate",
+        "7": "Configurations"
     },
     "docs.form.number": {
         "0": "Basic Usage",
