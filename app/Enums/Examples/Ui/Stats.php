@@ -24,6 +24,14 @@ class Stats
     <x-stats href="https://tallstackui.com" target="_blank" :number="100" />
     HTML;
 
+    public const NAVIGATE = <<<'HTML'
+    <!-- <a href="https://tallstackui.com" wire:navigate ...> -->
+    <x-stats href="https://tallstackui.com" target="_blank" :number="100" navigate />
+    
+    <!-- <a href="https://tallstackui.com" wire:navigate.hover ...> -->
+    <x-stats href="https://tallstackui.com" target="_blank" :number="100" navigate-nover />
+    HTML;
+
     public const ICONS = <<<'HTML'
     <x-stats icon="swatch" :number="100" />
     <x-stats icon="swatch" :number="100" light />

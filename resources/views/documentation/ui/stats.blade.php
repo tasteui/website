@@ -46,6 +46,10 @@
                          :number="10.000" />
             </div>
         </x-preview>
+        <p>
+            <u>Starting from version 1.35.0</u> you can now use <x-block>navigate</x-block> and <x-block>navigate-hover</x-block>:
+        </p>
+        <x-code language="blade" :contents="$navigate" />
     </x-section>
     <x-section title="Icons">
         <x-preview language="blade" :contents="$icons" :background="false">

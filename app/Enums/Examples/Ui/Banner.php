@@ -198,6 +198,35 @@ class Banner
     }
     HTML;
 
+    public const CONTROLLERS = <<<'HTML'
+    use Illuminate\Http\Request;
+    use TallStackUi\Traits\Interactions;
+    
+    class PaymentController extends Controller
+    {
+        use Interactions; // [tl! highlight]
+    
+        public function index()
+        {
+            return view('payment.index', [
+                //
+            ]);
+        }
+    
+        public function update(Request $request)
+        {
+            // ...
+    
+            $this->banner() // [tl! highlight:5]
+                ->success('...')
+                ->close()
+                ->enter(seconds: 3)
+                ->leave(seconds: 10)
+                ->send();
+        }
+    }
+    HTML;
+
     public const PERSONALIZATION = <<<'HTML'
     TallStackUi::personalize()
         ->banner()

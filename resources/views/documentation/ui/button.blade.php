@@ -92,6 +92,11 @@
                 </div>
             </div>
         </x-preview>
+        <p class="mt-2">
+            <u>Starting from version 1.35.0</u> you can use the <x-block>position</x-block> attribute
+            to define the position of the loading icon: <x-block>left</x-block> or <x-block>right</x-block>,
+            by default it will be on the left.
+        </p>
     </x-section>
     <x-section title="Color Variations" anchor="normal-color-variations">
         <x-preview language="blade" :contents="$color">

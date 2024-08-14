@@ -53,6 +53,12 @@
     <x-section title="Color Variations & Light Option" anchor="static-color-variations-light-option" disable-copy>
         <x-code language="blade" :contents="$colors" disable-copy />
     </x-section>
+    <x-section title="Dispatching via Controllers" new anchor="static-dispatching-via-controllers" disable-copy>
+        <p>
+            <u>Starting from version 1.35.0</u> you can trigger a banner via controllers.
+        </p>
+        <x-code :contents="$controllers" disable-copy />
+    </x-section>
     <x-separator text="Livewire Integration" />
     <x-section title="Concept" anchor="livewire-integration-concept" disable-copy>
         <p>

@@ -51,6 +51,24 @@
             </x-tab>
         </x-preview>
     </x-section>
+    <x-section title="Events" new>
+        <x-preview language="blade" :background="false" :contents="$events">
+            <x-tab selected="Invoices" x-on:navigate="alert($event.detail.select)">
+                <x-tab.items tab="Invoices">
+                    <x-slot:right>
+                        <x-icon name="document-text" class="w-5 h-5" />
+                    </x-slot:right>
+                    Invoices
+                </x-tab.items>
+                <x-tab.items tab="Transactions">
+                    <x-slot:left>
+                        <x-icon name="currency-dollar" class="w-5 h-5" />
+                    </x-slot:left>
+                    Transactions
+                </x-tab.items>
+            </x-tab>
+        </x-preview>
+    </x-section>
     <x-section title="Wireable" description="An option to control the tab via Livewire.">
         <x-preview language="blade" :background="false" :contents="$wireable">
             <livewire:documentation.ui.tabs />
