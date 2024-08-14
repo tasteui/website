@@ -32,7 +32,7 @@
         </x-preview>
         <div class="mt-4 space-y-4">
             <p>
-                <u>As of version 1.10.0</u>, the Toast has been improved to allow more flexibility in the format of use:
+                <u>Starting from version 1.10.0</u>, the Toast has been improved to allow more flexibility in the format of use:
             </p>
             <x-code :contents="$confirmationExplanation" disable-copy />
         </div>
