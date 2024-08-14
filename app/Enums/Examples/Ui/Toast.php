@@ -148,6 +148,48 @@ class Toast
     </div>
     HTML;
 
+    public const HOOKS = <<<'HTML'
+    public function save(): void
+    {
+        $this->toast()
+            ->success('...')
+            ->hooks([
+                // When close the toast by clicking on the "x" button.
+                'close' => [
+                    'method' => 'method',
+                    'params' => ['param1', 'param2']
+                ],
+                // When the toast is automatically closed by the timeout.
+                'timeout' => [
+                    'method' => 'method',
+                    'params' => ['param1', 'param2']
+                ],
+            ])
+            ->send();
+    }
+    HTML;
+
+    public const HOOKS_CALLABLE = <<<'HTML'
+    public function save(): void
+    {
+        $this->toast()
+            ->success('...')
+            ->hooks([
+                'close' => [
+                    'method' => 'method',
+                    'params' => fn () => ['param1', 'param2'] // [tl! highlight]
+                ],
+                'timeout' => [
+                    'method' => 'method',
+                    'params' => function () { // [tl! highlight:2]
+                        return ['param1', 'param2'];
+                    }
+                ],
+            ])
+            ->send();
+    }
+    HTML;
+
     public const JAVASCRIPT = <<<'HTML'
     <div>
         <x-button color="green" onclick="show()">Success</x-button>
@@ -222,6 +264,32 @@ class Toast
                 ->send();
     
             return $this->redirect(route('dashboard'));
+        }
+    }
+    HTML;
+
+    public const CONTROLLERS = <<<'HTML'
+    use Illuminate\Http\Request;
+    use TallStackUi\Traits\Interactions;
+    
+    class PaymentController extends Controller
+    {
+        use Interactions; // [tl! highlight]
+    
+        public function index()
+        {
+            return view('payment.index', [
+                //
+            ]);
+        }
+    
+        public function update(Request $request)
+        {
+            // ...
+    
+            $this->toast() // [tl! highlight:2]
+                ->success('...')
+                ->send();
         }
     }
     HTML;

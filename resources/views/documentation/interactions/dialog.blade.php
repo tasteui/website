@@ -45,8 +45,20 @@
             We recommend that you use listeners in one place, whether in the base layout or once per component.
         </x-warning>
     </x-section>
+    <x-section title="Hooks" new>
+        <p>
+            <u>Starting from version 1.35.0</u> you can now use hooks to perform actions:
+        </p>
+        <x-code :contents="$hooks" disable-copy />
+        <p>Optionally, you can also set <x-block>params</x-block> as closure:</p>
+        <x-code :contents="$hooksCallable" disable-copy />
+        <p><u>The closure will be resolved using Laravel container</u> and the result will be passed to the hook.</p>
+    </x-section>
     <x-section title="JavaScript API" description="JavaScript API to interact with Dialog.">
         <x-code language="blade" :contents="$javascript" disable-copy />
+        <x-warning>
+            The dialog hooks are unavailable in the JavaScript API.
+        </x-warning>
     </x-section>
     <x-section title="Color Personalization">
         <p>
@@ -68,6 +80,17 @@
         <p>
             When using <x-block>flash()</x-block> method, the dialog will not be displayed in the current
             request, but yes stored temporarily in the session and displayed in the next request.
+        </p>
+    </x-section>
+    <x-section title="Dispatching via Controllers" new>
+        <p>
+            <u>Starting from version 1.35.0</u> you can trigger a dialog via controllers.
+        </p>
+        <x-code :contents="$controllers" disable-copy />
+        <p>
+            Because certain methods were created and designed to be used with Livewire components,
+            methods like <x-block>confirm</x-block>, <x-block>cancel</x-block> and <x-block>hooks</x-block>
+            will be unavailable and will throw exceptions when you try to use them in controllers.
         </p>
     </x-section>
     <x-available-configuration />

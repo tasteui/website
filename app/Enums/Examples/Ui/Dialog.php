@@ -111,6 +111,53 @@ class Dialog
     </div>
     HTML;
 
+    public const HOOKS = <<<'HTML'
+    public function save(): void
+    {
+        $this->dialog()
+            ->success('...')
+            ->hooks([
+                // When using `success()`, `error()`, `warning()`, `info()` and pressing the OK button.
+                'ok' => [
+                    'method' => 'method',
+                    'params' => ['param1', 'param2']
+                ],
+                // When close the dialog by clicking on the "x" button.
+                'close' => [
+                    'method' => 'method',
+                    'params' => ['param1', 'param2']
+                ],
+                // When close the dialog by dismiss (clicking out of the dialog).
+                'dismiss' => [
+                    'method' => 'method',
+                    'params' => ['param1', 'param2']
+                ],
+            ])
+            ->send();
+    }
+    HTML;
+
+    public const HOOKS_CALLABLE = <<<'HTML'
+    public function save(): void
+    {
+        $this->dialog()
+            ->success('...')
+            ->hooks([
+                'ok' => [
+                    'method' => 'method',
+                    'params' => fn () => ['param1', 'param2'] // [tl! highlight]
+                ],
+                'dismiss' => [
+                    'method' => 'method',
+                    'params' => function () { // [tl! highlight:2]
+                        return ['param1', 'param2'];
+                    }
+                ],
+            ])
+            ->send();
+    }
+    HTML;
+
     public const JAVASCRIPT = <<<'HTML'
     <div>
         <x-button color="green" onclick="show()">Success</x-button>
@@ -185,6 +232,32 @@ class Dialog
                 ->send();
     
             return $this->redirect(route('dashboard'));
+        }
+    }
+    HTML;
+
+    public const CONTROLLERS = <<<'HTML'
+    use Illuminate\Http\Request;
+    use TallStackUi\Traits\Interactions;
+    
+    class PaymentController extends Controller
+    {
+        use Interactions; // [tl! highlight]
+    
+        public function index()
+        {
+            return view('payment.index', [
+                //
+            ]);
+        }
+    
+        public function update(Request $request)
+        {
+            // ...
+    
+            $this->dialog() // [tl! highlight:2]
+                ->success('...')
+                ->send();
         }
     }
     HTML;
