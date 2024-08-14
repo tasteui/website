@@ -88,7 +88,7 @@
         </p>
         <x-code :contents="$controllers" disable-copy />
         <p>
-            Because certain methods were created and designed to be used with Livewire components,
+            <u>Because certain methods were created and designed to be used with Livewire components</u>,
             methods like <x-block>confirm</x-block>, <x-block>cancel</x-block> and <x-block>hooks</x-block>
             will be unavailable and will throw exceptions when you try to use them in controllers.
         </p>

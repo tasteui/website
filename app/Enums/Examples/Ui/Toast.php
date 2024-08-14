@@ -157,6 +157,7 @@ class Toast
                 // When close the toast by clicking on the "x" button.
                 'close' => [
                     'method' => 'method',
+                    // The parameters can be anything you want: arrays, strings, int.
                     'params' => ['param1', 'param2']
                 ],
                 // When the toast is automatically closed by the timeout.

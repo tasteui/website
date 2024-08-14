@@ -120,6 +120,7 @@ class Dialog
                 // When using `success()`, `error()`, `warning()`, `info()` and pressing the OK button.
                 'ok' => [
                     'method' => 'method',
+                    // The parameters can be anything you want: arrays, strings, int.
                     'params' => ['param1', 'param2']
                 ],
                 // When close the dialog by clicking on the "x" button.
