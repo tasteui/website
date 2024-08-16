@@ -278,10 +278,8 @@ class Table
 
         <!--
         You can enable view persistence for the table by setting the `persistent`
-        and `id` parameters. The `id` parameter is necessary to avoid conflicts
-        when there is more than one table on the same page.
         -->
-        <x-table :$headers :$rows paginate persistent id="users" />
+        <x-table :$headers :$rows paginate persistent />
 
         <!--
         You can disable the TallStackUI paginator element. When you do that
