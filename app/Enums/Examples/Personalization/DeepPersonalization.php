@@ -34,10 +34,7 @@ class DeepPersonalization
 
     class Input extends \TallStackUi\View\Components\Form\Input // [tl! highlight]
     {
-        public function __construct()
-        {
-            parent::__construct(); // [tl! highlight]
-        }
+        //
     }
     HTML;
 
@@ -48,11 +45,6 @@ class DeepPersonalization
 
     class Input extends \TallStackUi\View\Components\Form\Input
     {
-        public function __construct()
-        {
-            parent::__construct();
-        }
-
         public function personalization(): array // [tl! focus:3]
         {
             return [/* ... */];
