@@ -137,6 +137,7 @@
                         <x-badge color="pink">solid</x-badge>
                         <x-badge color="pink">outline</x-badge>
                         <x-badge color="pink">light</x-badge>
+                        <x-badge color="pink">flat</x-badge>
                     </x-custom-table.td>
                 </x-custom-table.tr>
                 <x-custom-table.tr>
@@ -151,6 +152,7 @@
                         <x-badge color="pink">solid</x-badge>
                         <x-badge color="pink">outline</x-badge>
                         <x-badge color="pink">light</x-badge>
+                        <x-badge color="pink">flat</x-badge>
                     </x-custom-table.td>
                 </x-custom-table.tr>
                 <x-custom-table.tr>
