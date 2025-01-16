@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Cookie;
 
-if (!defined('LATEST_VERSION')) {
+if (! defined('LATEST_VERSION')) {
     define('LATEST_VERSION', 'v2');
 }
 

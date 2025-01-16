@@ -1,19 +1,17 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace App\Http\Controllers;
 
+use App\Enums\Example;
 use App\Traits\VersionDiscovery;
-use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
-use Illuminate\Support\Facades\View;
-use Symfony\Component\HttpFoundation\Response;
 
-class ShareVersionVariable
+class WelcomeController
 {
     use VersionDiscovery;
 
-    public function handle(Request $request, Closure $next): Response
+    public function __invoke(Request $request)
     {
         $version = $this->current();
 
@@ -21,8 +19,8 @@ class ShareVersionVariable
             Cookie::queue(Cookie::forever('version', $version));
         }
 
-        View::share('version', $version);
-
-        return $next($request);
+        return view('welcome', [
+            'personalization' => Example::Welcome->variables($version),
+        ]);
     }
 }

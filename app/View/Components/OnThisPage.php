@@ -29,7 +29,7 @@ class OnThisPage extends Component
             // Then we remove all versions of the URI to get the current page, like docs.ui.button instead of docs.v1.ui.button
             $index = str($this->uri())
                 ->replace('/', '.')
-                ->remove(collect($this->versions)->map(fn (string $version) => "{$version}.")->toArray())
+                ->remove(collect($this->versions())->map(fn (string $version) => "{$version}.")->toArray())
                 ->value();
 
             $file = File::json(base_path(sprintf('contents/on-this-page/%s.json', $this->current())));

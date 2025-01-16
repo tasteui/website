@@ -18,7 +18,7 @@ $save = function () {
     })->validate();
 
     (match (filled($this->prefix)) {
-        true => fn () =>Cookie::queue(Cookie::forever('prefix', $this->prefix)),
+        true => fn () => Cookie::queue(Cookie::forever('prefix', $this->prefix)),
         default => fn () => Cookie::queue(Cookie::forget('prefix')),
     })();
 
