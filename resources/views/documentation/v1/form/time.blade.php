@@ -14,7 +14,7 @@
         Form time component.
     </x-slot:description>
     <x-slot:personalization>
-        <livewire:documentation.personalization :$personalization component="time" />
+        <livewire:documentation.v1.personalization :$personalization component="time" />
     </x-slot:personalization>
     <x-section title="Basic Usage">
         <x-preview language="blade" :contents="$basic">

@@ -37,7 +37,7 @@
         <p>
             Now that you understand the concept, see debug mode in action:
         </p>
-        <livewire:documentation.helpers.debug />
+        <livewire:documentation.v1.helpers.debug />
         <p class="mt-4">
             <u>Did you notice that there are some little icons next to the button and the
             icon within the button? Put the mouse over them!</u> This is the debug of the

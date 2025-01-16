@@ -39,7 +39,7 @@ Route::prefix('/ui')
             // We need to auth the user to be able to use `auth()->user()` in the view.
             auth()->loginUsingId(1);
 
-            return view('documentation.ui.avatar', Example::Avatar->variables());
+            return view('documentation.v1.ui.avatar', Example::Avatar->variables());
         })->name('avatar');
         Route::view('/badge', 'documentation.v1.ui.badge', Example::Badge->variables())->name('badge');
         Route::view('/banner', 'documentation.v1.ui.banner', Example::Banner->variables())->name('banner');

@@ -15,7 +15,7 @@ class Internal
             ->block('block', 'classes');
         HTML;
 
-        return view('documentation.internal.error', [
+        return view('documentation.v1.internal.error', [
             'personalization' => $personalization,
         ]);
     }
@@ -28,7 +28,7 @@ class Internal
             ->block('block', 'classes');
         HTML;
 
-        return view('documentation.internal.hint', [
+        return view('documentation.v1.internal.hint', [
             'personalization' => $personalization,
         ]);
     }
@@ -41,7 +41,7 @@ class Internal
             ->block('block', 'classes');
         HTML;
 
-        return view('documentation.internal.label', [
+        return view('documentation.v1.internal.label', [
             'personalization' => $personalization,
         ]);
     }
@@ -60,7 +60,7 @@ class Internal
             ->block('block', 'classes');
         HTML;
 
-        return view('documentation.internal.wrapper', [
+        return view('documentation.v1.internal.wrapper', [
             'personalization' => $personalization,
         ]);
     }
@@ -73,7 +73,7 @@ class Internal
             ->block('block', 'classes');
         HTML;
 
-        return view('documentation.internal.floating', [
+        return view('documentation.v1.internal.floating', [
             'personalization' => $personalization,
         ]);
     }

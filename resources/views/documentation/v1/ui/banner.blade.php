@@ -13,7 +13,7 @@
         Banner component.
     </x-slot:description>
     <x-slot:personalization>
-        <livewire:documentation.personalization :$personalization component="banner" />
+        <livewire:documentation.v1.personalization :$personalization component="banner" />
     </x-slot:personalization>
     <x-section title="Concept" anchor="static-concept" disable-copy>
         <p>
@@ -85,7 +85,7 @@
     </x-section>
     <x-section title="Example" anchor="livewire-integration-example">
         <x-preview :contents="$example">
-            <livewire:documentation.interactions.banner.examples />
+            <livewire:documentation.v1.interactions.banner.examples />
         </x-preview>
     </x-section>
     <x-section title="Display After Redirects" anchor="livewire-integration-display-after-redirects">

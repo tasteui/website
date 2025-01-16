@@ -1,6 +1,6 @@
 @php
     foreach (apply_prefix($__data) as $key => $value) $$key = $value;
-    $defaults = \TallStackUi\View\Components\Form\Password::defaults();
+    $defaults = config('tallstackui.settings.form.password.rules');
 @endphp
 
 <x-layout>
@@ -11,7 +11,7 @@
         Form password component. Show or hide password value.
     </x-slot:description>
     <x-slot:personalization>
-        <livewire:documentation.personalization :$personalization component="password" />
+        <livewire:documentation.v1.personalization :$personalization component="password" />
     </x-slot:personalization>
     <x-section title="Basic Usage">
         <x-preview language="blade" :contents="$basic">
