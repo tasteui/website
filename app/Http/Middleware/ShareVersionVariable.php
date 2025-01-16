@@ -10,11 +10,22 @@ use Symfony\Component\HttpFoundation\Response;
 
 class ShareVersionVariable
 {
+    protected const VERSIONS = [
+        'v1',
+        'v2',
+    ];
+
     public function handle(Request $request, Closure $next): Response
     {
-        $uri = Route::getCurrentRoute()->uri();
+        $version = str(Route::getCurrentRoute()->uri())->after('docs/')
+            ->before('/')
+            ->value();
 
-        View::share('version', str($uri)->after('docs/')->before('/')->value());
+        if (! in_array($version, self::VERSIONS)) {
+            return $next($request);
+        }
+
+        View::share('version', $version);
 
         return $next($request);
     }
