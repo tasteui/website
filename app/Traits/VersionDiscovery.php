@@ -15,9 +15,9 @@ trait VersionDiscovery
     ];
 
     /**
-     * Discover the version based on the current route.
+     * Discover the current selected version based on the current route.
      */
-    public function version(): string
+    public function current(): string
     {
         return str(Route::getCurrentRoute()->uri())->after('docs/')
             ->before('/')
@@ -37,6 +37,6 @@ trait VersionDiscovery
      */
     public function cacheKey(): string
     {
-        return $this->version().'-'.$this->uri();
+        return $this->current().'-'.$this->uri();
     }
 }

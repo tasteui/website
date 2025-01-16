@@ -14,7 +14,7 @@ class ShareVersionVariable
 
     public function handle(Request $request, Closure $next): Response
     {
-        if (! in_array($version = $this->version(), $this->versions)) {
+        if (! in_array($version = $this->current(), $this->versions)) {
             return $next($request);
         }
 

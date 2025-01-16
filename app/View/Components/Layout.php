@@ -2,11 +2,14 @@
 
 namespace App\View\Components;
 
+use App\Traits\VersionDiscovery;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
 class Layout extends Component
 {
+    use VersionDiscovery;
+
     public function __construct(
         public ?string $title = null,
         public ?string $version = null,

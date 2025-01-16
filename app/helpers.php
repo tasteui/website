@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Cookie;
 
+if (!defined('LATEST_VERSION')) {
+    define('LATEST_VERSION', 'v2');
+}
+
 if (! function_exists('apply_prefix')) {
     function apply_prefix(array $data): array
     {

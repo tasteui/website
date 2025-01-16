@@ -74,6 +74,11 @@
                             @endif
                         </header>
                     @endif
+                    @if ($current() !== LATEST_VERSION)
+                        <div class="mb-6">
+                            <x-old-version-warning />
+                        </div>
+                    @endif
                     {{ $slot }}
                 </main>
                 @if ($torchlight)

@@ -32,7 +32,7 @@ class OnThisPage extends Component
                 ->remove(collect($this->versions)->map(fn (string $version) => "{$version}.")->toArray())
                 ->value();
 
-            $file = File::json(base_path(sprintf('contents/on-this-page/%s.json', $this->version())));
+            $file = File::json(base_path(sprintf('contents/on-this-page/%s.json', $this->current())));
 
             $content = $file[$index] ?? [];
 
