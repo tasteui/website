@@ -2,11 +2,16 @@
 
 namespace App\View\Components;
 
+use App\Traits\VersionDiscovery;
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\File;
 use Illuminate\View\Component;
 
 class OnThisPage extends Component
 {
+    use VersionDiscovery;
+
     public function __construct(public ?array $contents = [], public ?bool $mobile = false)
     {
         $this->contents();
@@ -19,25 +24,34 @@ class OnThisPage extends Component
 
     private function contents(): void
     {
-        $index = str_replace('/', '.', request()->route()->uri());
-        $file = json_decode(file_get_contents(base_path('contents/on-this-page.json')), true);
-        $content = $file[$index] ?? [];
+        Cache::remember($this->cacheKey(), now()->addMinutes(30), function (): void {
+            // We start by getting the current URI and turning / into . to turn things like /docs/ui/button into docs.ui.button
+            // Then we remove all versions of the URI to get the current page, like docs.ui.button instead of docs.v1.ui.button
+            $index = str($this->uri())
+                ->replace('/', '.')
+                ->remove(collect($this->versions)->map(fn (string $version) => "{$version}.")->toArray())
+                ->value();
 
-        if (empty($content)) {
-            return;
-        }
+            $file = File::json(base_path(sprintf('contents/on-this-page/%s.json', $this->version())));
 
-        // If the first key is numeric, we know it's a flat array
-        // For pages like /docs/ui/alert that doesn't contain any category.
-        if (is_numeric(array_keys($content)[0])) {
-            $this->contents = $this->flat($content);
+            $content = $file[$index] ?? [];
 
-            return;
-        }
+            if (empty($content)) {
+                return;
+            }
 
-        // Otherwise, it's a nested array, for pages like /docs/ui/button
-        // that contains button types like categories.
-        $this->contents = $this->nested($content);
+            // If the first key is numeric, we know it's a flat array
+            // For pages like /docs/ui/alert that doesn't contain any category.
+            if (is_numeric(array_keys($content)[0])) {
+                $this->contents = $this->flat($content);
+
+                return;
+            }
+
+            // Otherwise, it's a nested array, for pages like /docs/ui/button
+            // that contains button types like categories.
+            $this->contents = $this->nested($content);
+        });
     }
 
     private function flat(array $content): array

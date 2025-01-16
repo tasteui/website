@@ -1,5 +1,6 @@
 <nav {{ $attributes->merge(['class' => 'text-base lg:text-sm']) }}>
     <div class="mb-4 pr-4 space-y-2 sm:flex-1 sm:pr-0">
+        <livewire:version-selector />
         <div class="relative bg-white dark:bg-slate-900">
             <button type="button"
                     x-on:click="document.querySelector('#docsearch').firstChild.click()"
