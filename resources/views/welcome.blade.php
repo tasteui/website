@@ -86,7 +86,7 @@
                                                     </span> that elevate your workflow of <i>Livewire</i> applications.
                                                 </p>
                                                 <div class="mt-6 flex items-center gap-x-2">
-                                                    <x-button :href="route('documentation.v1.get-started')"
+                                                    <x-button :href="route('documentation.v1.getting-started')"
                                                               color="pink"
                                                               position="right"
                                                               wire:navigate
@@ -387,7 +387,7 @@
                         </div>
                     </div>
                     <div class="mt-8 flex justify-center">
-                        <a href="{{ route('documentation.v1.get-started') }}" wire:navigate class="text-2xl font-semibold text-gray-700 dark:text-pink-600">
+                        <a href="{{ route('documentation.v1.getting-started') }}" wire:navigate class="text-2xl font-semibold text-gray-700 dark:text-pink-600">
                             ... And muuuch more 🔥 Start your next <i>TALL</i> idea using TallStackUI!
                         </a>
                     </div>

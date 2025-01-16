@@ -38,15 +38,21 @@
                 <div class="flex justify-center items-center mb-6">
                     <x-svg.banner class="w-14 h-14" />
                 </div>
-                <x-layout.navigation class="ml-8" />
+                @if ($version === 'v1')
+                    <x-layout.navigation.version.v1 class="ml-8" />
+                @else
+                    <x-layout.navigation.version.v1 class="ml-8" />
+                @endif
             </div>
         </div>
     </div>
 </div>
-
-
 <div class="hidden lg:relative lg:block lg:flex-none">
     <div class="sticky top-[4.75rem] -ml-0.5 h-[calc(100vh-4.75rem)] w-64 overflow-y-auto soft-scrollbar overflow-x-hidden py-4 pl-0.5 pr-8 xl:w-72 xl:pr-16">
-        <x-layout.navigation />
+        @if ($version === 'v1')
+            <x-layout.navigation.version.v1 />
+        @else
+            <x-layout.navigation.version.v2 />
+        @endif
     </div>
 </div>
