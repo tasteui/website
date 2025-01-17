@@ -3,7 +3,10 @@
         <h2 class="font-medium text-pink-900 font-display dark:text-pink-500">Introduction</h2>
         <ul role="list" class="mt-4 space-y-2 dark:border-slate-800 lg:space-y-4 lg:mt-4 lg:border-slate-200">
             <li class="relative ml-4">
-                <x-layout.navigation.link :href="route('documentation.v2.getting-started')" text="Get Started" />
+                <x-layout.navigation.link :href="route('documentation.v2.getting-started')" text="Getting Started" />
+            </li>
+            <li class="relative ml-4">
+                <x-layout.navigation.link :href="route('documentation.v2.documentation')" text="Documentation" />
             </li>
             <li class="relative ml-4">
                 <x-layout.navigation.link :href="route('documentation.v2.installation')" text="Installation" />
@@ -12,13 +15,7 @@
                 <x-layout.navigation.link :href="route('documentation.v2.troubleshooting')" text="Troubleshooting" />
             </li>
             <li class="relative ml-4">
-                <x-layout.navigation.link :href="route('documentation.v2.updates')" text="Updates" />
-            </li>
-            <li class="relative ml-4">
-                <x-layout.navigation.link :href="route('documentation.v2.faq')" text="F.A.Q" />
-            </li>
-            <li class="relative ml-4">
-                <x-layout.navigation.link :href="route('documentation.v2.summer-release')" text="Summer Release" />
+                <x-layout.navigation.link :href="route('documentation.v2.installation')" text="Upgrade Guide" />
             </li>
         </ul>
     </li>
@@ -100,6 +97,9 @@
                         <x-layout.navigation.link :href="route('documentation.v2.ui.card')" text="Card" />
                     </li>
                     <li class="relative ml-4">
+                        <x-layout.navigation.link :href="route('documentation.v2.ui.card')" text="Carousel" new />
+                    </li>
+                    <li class="relative ml-4">
                         <x-layout.navigation.link :href="route('documentation.v2.ui.clipboard')" text="Clipboard" />
                     </li>
                     <li class="relative ml-4">
@@ -109,10 +109,16 @@
                         <x-layout.navigation.link :href="route('documentation.v2.ui.error')" text="Error" />
                     </li>
                     <li class="relative ml-4">
+                        <x-layout.navigation.link :href="route('documentation.v2.ui.card')" text="Environment" new />
+                    </li>
+                    <li class="relative ml-4">
                         <x-layout.navigation.link :href="route('documentation.v2.ui.icon')" text="Icon" />
                     </li>
                     <li class="relative ml-4">
                         <x-layout.navigation.link :href="route('documentation.v2.ui.modal')" text="Modal" />
+                    </li>
+                    <li class="relative ml-4">
+                        <x-layout.navigation.link :href="route('documentation.v2.ui.card')" text="Layout" new />
                     </li>
                     <li class="relative ml-4">
                         <x-layout.navigation.link :href="route('documentation.v2.ui.link')" text="Link" />
@@ -128,6 +134,9 @@
                     </li>
                     <li class="relative ml-4">
                         <x-layout.navigation.link :href="route('documentation.v2.ui.rating')" text="Rating" />
+                    </li>
+                    <li class="relative ml-4">
+                        <x-layout.navigation.link :href="route('documentation.v2.ui.card')" text="Signature" new />
                     </li>
                     <li class="relative ml-4">
                         <x-layout.navigation.link :href="route('documentation.v2.ui.slide')" text="Slide" />

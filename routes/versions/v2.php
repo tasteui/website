@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/getting-started', 'documentation.v2.getting-started')->name('getting-started');
 Route::view('/installation', 'documentation.v2.installation', Example::Installation->variables())->name('installation');
+Route::view('/documentation', 'documentation.v2.documentation')->name('documentation');
 Route::view('/troubleshooting', 'documentation.v2.troubleshooting', Example::Troubleshooting->variables())->name('troubleshooting');
 Route::view('/updates', 'documentation.v2.updates', Example::Updates->variables())->name('updates');
 Route::view('/faq', 'documentation.v2.faq', Example::Updates->variables())->name('faq');

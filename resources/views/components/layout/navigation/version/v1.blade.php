@@ -3,7 +3,7 @@
         <h2 class="font-medium text-pink-900 font-display dark:text-pink-500">Introduction</h2>
         <ul role="list" class="mt-4 space-y-2 dark:border-slate-800 lg:space-y-4 lg:mt-4 lg:border-slate-200">
             <li class="relative ml-4">
-                <x-layout.navigation.link :href="route('documentation.v1.getting-started')" text="Get Started" />
+                <x-layout.navigation.link :href="route('documentation.v1.getting-started')" text="Getting Started" />
             </li>
             <li class="relative ml-4">
                 <x-layout.navigation.link :href="route('documentation.v1.installation')" text="Installation" />
