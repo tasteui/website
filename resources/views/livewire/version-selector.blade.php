@@ -9,7 +9,11 @@ uses(VersionDiscovery::class);
 state(['version' => fn() => $this->current()]);
 
 $change = function (): void {
-    redirect()->away(route('documentation.' . $this->version . '.getting-started'));
+    if ($this->version === 'v2') {
+        redirect()->away(route('documentation.v2.installation'));
+    } else {
+        redirect()->away(route('documentation.v1.getting-started'));
+    }
 
     Cookie::queue(Cookie::forever('version', $this->version));
 };

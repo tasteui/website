@@ -1,21 +1,27 @@
 <ul role="list" class="space-y-9">
     <li>
-        <h2 class="font-medium text-pink-900 font-display dark:text-pink-500">Introduction</h2>
+        <h2 class="font-medium text-pink-900 font-display dark:text-pink-500">Getting Started</h2>
         <ul role="list" class="mt-4 space-y-2 dark:border-slate-800 lg:space-y-4 lg:mt-4 lg:border-slate-200">
             <li class="relative ml-4">
-                <x-layout.navigation.link :href="route('documentation.v2.getting-started')" text="Getting Started" />
+                <x-layout.navigation.link :href="route('documentation.v2.installation')" text="Installation" />
+            </li>
+            <li class="relative ml-4">
+                <x-layout.navigation.link :href="route('documentation.v2.documentation')" text="Component Prefix" />
+            </li>
+            <li class="relative ml-4">
+                <x-layout.navigation.link :href="route('documentation.v2.installation')" text="AlpineJS Requirement" />
             </li>
             <li class="relative ml-4">
                 <x-layout.navigation.link :href="route('documentation.v2.documentation')" text="Documentation" />
-            </li>
-            <li class="relative ml-4">
-                <x-layout.navigation.link :href="route('documentation.v2.installation')" text="Installation" />
             </li>
             <li class="relative ml-4">
                 <x-layout.navigation.link :href="route('documentation.v2.troubleshooting')" text="Troubleshooting" />
             </li>
             <li class="relative ml-4">
                 <x-layout.navigation.link :href="route('documentation.v2.installation')" text="Upgrade Guide" />
+            </li>
+            <li class="relative ml-4">
+                <x-layout.navigation.link :href="route('documentation.v2.installation')" text="Livewire SPA Mode" />
             </li>
         </ul>
     </li>

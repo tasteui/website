@@ -5,7 +5,7 @@ namespace App\Enums\Examples\V2\Others;
 class Installation
 {
     public const INSTALLATION = <<<'HTML'
-    composer require tallstackui/tallstackui
+    composer require tallstackui/tallstackui:^2.0
     HTML;
 
     public const LAYOUT = <<<'HTML'

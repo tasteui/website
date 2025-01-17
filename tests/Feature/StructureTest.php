@@ -113,7 +113,6 @@ describe('V2', function () {
     test('can access all routes', function (string $route) {
         $this->get($route)->assertOk();
     })->with([
-        fn () => route('documentation.v2.getting-started'),
         fn () => route('documentation.v2.installation'),
         fn () => route('documentation.v2.troubleshooting'),
         fn () => route('documentation.v2.updates'),

@@ -4,16 +4,33 @@
     </x-slot:title>
     <x-section disable-copy>
         <p>
-            Nosso objetivo com essa página é te explicar diversas coisas relacionadas com a documentação da TallStackUI.
-            Embora aqui nesta página possamos citar algumas coisas específicas para a versão 2.x, diversas outras coisas podem ser consideradas válidas para compreensão da versão 1.x também.
-            Recomendamos que leia com atenção e sem pressa, PRINCIPALMENTE se está começando a usar a TallStackUI agora.
+            The goal of this page is explain you several things related to the TallStackUI documentation. Although here in this page
+            we can mention some specific things for the version 2.x, several other things can be considered valid for understanding
+            the version 1.x too. We recommend you to read with attention and without hurry, ESPECIALLY if you are starting to use TallStackUI now.
+        </p>
+    </x-section>
+    <x-section title="Searches" disable-copy>
+        <p>
+            The docs offers a search system that can be used to quickly find what you are looking for. You can click on the text box
+            "Quick search...", on the left side of the screen, or press one of the shortcuts, depending on your operating system:
+            <kbd>Ctrl</kbd> + <kbd>K</kbd> or <kbd>Cmd</kbd> + <kbd>K</kbd>.
         </p>
     </x-section>
     <x-section title="Prefixing Examples" disable-copy>
         <p>
-            Se você observar bem, há um botão ao lado esquerdo da tela, com o texto "Prefixing Examples". Esse botão serve para prefixar os exemplos da documentação com um prefixo que seja o mesmo utilizado em seu projeto.
-            Essa é a hora que você pode se perguntar o que é um prefixo? Bom, prefixo é uma forma de evitar conflitos entre os nomes de componentes, resumidamente. Como você pode copiar exemplos da documentação
-            então criamos esse recurso para que se você copiar os exemplos da documentação, você possa já copiá-los com os prefixos aplicados. Você pode ler mais sobre o prefixo clicando aqui!
+            If you observe well, there is a button on the left side of the screen, with the text "Prefixing Examples". This button is used
+            to prefix the documentation examples with a prefix that is the same as the one used in your project. This is the time you can
+            ask yourself what is a prefix? Well, a prefix is a way to avoid conflicts between component names, in short. As you can copy
+            examples from the documentation, we created this feature so that if you copy the examples from the documentation, you can
+            already copy them with the prefixes applied. You can read more about the prefix by clicking here.
+        </p>
+    </x-section>
+    <x-section title="Examples Without Binding" disable-copy>
+        <p>
+            It is normal to expect that code examples in the documentation related to form components have <x-block>wire:model</x-block> as
+            part of the example - a statement used to bind values when used in Livewire. However, the documentation omits this statement
+            because it is known that several form components can be used inside or outside the context of Livewire components. You can
+            learn about the components that can be used outside the context by clicking here.
         </p>
     </x-section>
 </x-layout>
