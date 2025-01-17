@@ -6,10 +6,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/installation', 'documentation.v2.installation', Example::Installation->variables())->name('installation');
 Route::view('/documentation', 'documentation.v2.documentation')->name('documentation');
+Route::view('/component-prefix', 'documentation.v2.component-prefix', Example::ComponentPrefix->variables())->name('component-prefix');
+Route::view('/alpinejs', 'documentation.v2.alpinejs', Example::Alpine->variables())->name('alpinejs');
 Route::view('/troubleshooting', 'documentation.v2.troubleshooting', Example::Troubleshooting->variables())->name('troubleshooting');
-Route::view('/updates', 'documentation.v2.updates', Example::Updates->variables())->name('updates');
-Route::view('/faq', 'documentation.v2.faq', Example::Updates->variables())->name('faq');
-Route::view('/summer-release', 'documentation.v2.summer-release', Example::SummerRelease->variables())->name('summer-release');
+Route::view('/upgrade-guide', 'documentation.v2.upgrade-guide')->name('upgrade-guide');
+Route::view('/livewire-spa-mode', 'documentation.v2.livewire-spa-mode')->name('livewire-spa-mode');
 
 Route::prefix('/form')
     ->name('form.')

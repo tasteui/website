@@ -35,6 +35,7 @@ enum Example: string
     case Icon = 'Ui\\Icon';
     case Input = 'Form\\Input';
     case Installation = 'Others\\Installation';
+    case ComponentPrefix = 'Others\\ComponentPrefix';
     case Link = 'Ui\\Link';
     case Loading = 'Ui\\Loading';
     case Modal = 'Ui\\Modal';

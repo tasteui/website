@@ -1,10 +1,15 @@
 {
     "docs.installation": {
-        "0": "Requirements",
-        "1": "Installation",
-        "2": "Component Prefix",
-        "3": "AlpineJS Requirement",
-        "4": "Livewire SPA Mode"
+        "0": "Meet TallStackUI",
+        "1": "History & Motivation",
+        "2": "Requirements",
+        "3": "Installation"
+    },
+    "docs.component-prefix": {
+        "0": "Configuration File",
+        "1": "Environment Variable",
+        "2": "Command",
+        "3": "Using Prefix"
     },
     "docs.updates": {
         "0": "Concept",

@@ -4,6 +4,23 @@ namespace App\Enums\Examples\V2\Others;
 
 class Alpine
 {
+    public const INSTALLATION = <<<'HTML'
+    <html>
+        <head>
+            <!-- ... -->
+
+            <tallstackui:script />
+            @livewireStyles
+            @vite(['resources/css/app.css', 'resources/js/app.js'])
+        </head>
+        <body>
+            <!-- ... -->
+
+            @livewireScripts {{-- [tl! focus, highlight] --}}
+        </body>
+    </html>
+    HTML;
+
     public const INPUT = <<<'HTML'
     <x-input label="Birthday"
              hint="Insert your birthday"

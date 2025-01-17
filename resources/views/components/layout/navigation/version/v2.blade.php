@@ -6,22 +6,22 @@
                 <x-layout.navigation.link :href="route('documentation.v2.installation')" text="Installation" />
             </li>
             <li class="relative ml-4">
-                <x-layout.navigation.link :href="route('documentation.v2.documentation')" text="Component Prefix" />
-            </li>
-            <li class="relative ml-4">
-                <x-layout.navigation.link :href="route('documentation.v2.installation')" text="AlpineJS Requirement" />
-            </li>
-            <li class="relative ml-4">
                 <x-layout.navigation.link :href="route('documentation.v2.documentation')" text="Documentation" />
+            </li>
+            <li class="relative ml-4">
+                <x-layout.navigation.link :href="route('documentation.v2.component-prefix')" text="Component Prefix" />
+            </li>
+            <li class="relative ml-4">
+                <x-layout.navigation.link :href="route('documentation.v2.alpinejs')" text="AlpineJS Requirement" />
             </li>
             <li class="relative ml-4">
                 <x-layout.navigation.link :href="route('documentation.v2.troubleshooting')" text="Troubleshooting" />
             </li>
             <li class="relative ml-4">
-                <x-layout.navigation.link :href="route('documentation.v2.installation')" text="Upgrade Guide" />
+                <x-layout.navigation.link :href="route('documentation.v2.upgrade-guide')" text="Upgrade Guide" />
             </li>
             <li class="relative ml-4">
-                <x-layout.navigation.link :href="route('documentation.v2.installation')" text="Livewire SPA Mode" />
+                <x-layout.navigation.link :href="route('documentation.v2.livewire-spa-mode')" text="Livewire SPA Mode" />
             </li>
         </ul>
     </li>
