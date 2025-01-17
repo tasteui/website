@@ -68,9 +68,9 @@ enum Example: string
     case Welcome = 'Others\\Welcome';
     case WithoutLivewire = 'Form\\WithoutLivewire';
 
-    public function variables(?string $version = null): array
+    public function variables(): array
     {
-        $version ??= "V2";
+        $version = strtoupper($this->current());
         $class = "App\\Enums\\Examples\\$version\\$this->value";
 
         throw_if(! class_exists($class), new Exception('Invalid code example'));

@@ -2,7 +2,6 @@
 
 namespace App\Traits;
 
-use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Route;
 
 trait VersionDiscovery
@@ -19,11 +18,12 @@ trait VersionDiscovery
     }
 
     /**
-     * Discover the current selected version based on the current route.
+     * Discover the current selected version based
+     * on the current route or get the default.
      */
     public function current(): string
     {
-        $version = Cookie::get('version') ?? str(Route::getCurrentRoute()?->uri())->after('docs/')
+        $version = str(Route::getCurrentRoute()?->uri())->after('docs/')
             ->before('/')
             ->value();
 

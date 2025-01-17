@@ -25,7 +25,7 @@ new class extends Component {
             'headers' => [
                 ['index' => 'id', 'label' => '#'],
                 ['index' => 'name', 'label' => 'Member'],
-                ['index' => 'action', 'label' => 'Remove of Laravel Team', 'sortable' => false],
+                ['index' => 'action', 'label' => 'Remove From Laravel Team?', 'sortable' => false],
             ],
             'rows' => User::query()
                 ->when($this->search, fn(Builder $query) => $query->where('name', 'like', "%{$this->search}%"))
