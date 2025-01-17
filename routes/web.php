@@ -8,7 +8,6 @@ Route::redirect('/docs', '/docs/get-started');
 Route::redirect('/install', '/docs/installation');
 Route::redirect('/summer-release', '/docs/summer-release');
 
-
 Route::middleware(ShareVersionVariable::class)
     ->group(function () {
         Route::view('/', 'welcome', Example::Welcome->variables())->name('welcome');

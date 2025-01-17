@@ -28,7 +28,7 @@ new class extends Component {
                 ['index' => 'action', 'label' => 'Remove From Laravel Team?', 'sortable' => false],
             ],
             'rows' => User::query()
-                ->when($this->search, fn(Builder $query) => $query->where('name', 'like', "%{$this->search}%"))
+                ->when($this->search, fn (Builder $query) => $query->where('name', 'like', "%{$this->search}%"))
                 ->orderBy(...array_values($this->sort))
                 ->paginate($this->quantity)
                 ->withQueryString()
