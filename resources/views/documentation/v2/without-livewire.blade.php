@@ -5,16 +5,13 @@
 <x-layout>
     <x-slot:title>
         Without Livewire
-        <x-slot:version>
-            1.5.3
-        </x-slot:version>
     </x-slot:title>
     <x-slot:description>
         TallStackUI Form Components Without Livewire.
     </x-slot:description>
     <x-section title="Concept" disable-copy>
         TallStackUI is a component library that was designed for Livewire 3, but after various
-        requests from the entire user community, <u>starting from version 1.5.3</u> <b>you can use form
+        requests from the entire user community, <b>you can use form
         components out of Livewire components.</b> Check below the list of all components that
         can be used out of Livewire components, and also those that cannot.
         <div class="mt-2 space-y-2">

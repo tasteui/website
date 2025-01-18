@@ -5,9 +5,6 @@
 <x-layout>
     <x-slot:title>
         Loading
-        <x-slot:version>
-            v1.2
-        </x-slot:version>
     </x-slot:title>
     <x-slot:description>
         Loading component.

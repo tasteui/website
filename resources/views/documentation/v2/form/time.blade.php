@@ -6,9 +6,6 @@
 <x-layout>
     <x-slot:title>
         Form Time
-        <x-slot:version>
-            v1.20
-        </x-slot:version>
     </x-slot:title>
     <x-slot:description>
         Form time component.

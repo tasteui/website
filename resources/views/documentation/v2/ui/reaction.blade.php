@@ -5,9 +5,6 @@
 <x-layout>
     <x-slot:title>
         Reaction
-        <x-slot:version>
-            v1.13
-        </x-slot:version>
     </x-slot:title>
     <x-slot:description>
         Reaction component.

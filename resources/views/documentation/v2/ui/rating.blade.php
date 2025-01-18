@@ -5,9 +5,6 @@
 <x-layout>
     <x-slot:title>
         Rating
-        <x-slot:version>
-            v1.25
-        </x-slot:version>
     </x-slot:title>
     <x-slot:description>
         Rating component.

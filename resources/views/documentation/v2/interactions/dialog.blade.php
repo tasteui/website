@@ -31,9 +31,6 @@
             <livewire:documentation.v1.interactions.dialog.confirmation/>
         </x-preview>
         <div class="mt-4 space-y-4">
-            <p>
-                <u>Starting from version 1.10.0</u>, the Dialog has been improved to allow more flexibility in the format of use:
-            </p>
             <x-code :contents="$confirmationExplanation" disable-copy />
         </div>
     </x-section>
@@ -45,10 +42,7 @@
             We recommend that you use listeners in one place, whether in the base layout or once per component.
         </x-warning>
     </x-section>
-    <x-section title="Hooks" new>
-        <p>
-            <u>Starting from version 1.35.0</u> you can now use hooks to perform actions:
-        </p>
+    <x-section title="Hooks">
         <x-code :contents="$hooks" disable-copy />
         <p>Optionally, you can also set <x-block>params</x-block> as closure:</p>
         <x-code :contents="$hooksCallable" disable-copy />

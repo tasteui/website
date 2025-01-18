@@ -5,9 +5,6 @@
 <x-layout>
     <x-slot:title>
         Form Color
-        <x-slot:version>
-            v1.5
-        </x-slot:version>
     </x-slot:title>
     <x-slot:description>
         Form color component.
@@ -42,11 +39,6 @@
         <x-preview language="blade" :contents="$custom">
             <x-color :colors="['#83493D', '#3D8357', '#693D83', '#3AB3D1', '#5DD116']" />
         </x-preview>
-        <x-warning class="mt-4">
-            <u>Starting from version 1.35.0</u>, you can now set the custom colors
-            using the configuration file to avoid the need to pass it every time
-            you need to use the component.
-        </x-warning>
     </x-section>
     <x-section title="Events">
         <x-preview language="blade" :contents="$events">

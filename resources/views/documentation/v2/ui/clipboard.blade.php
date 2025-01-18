@@ -5,9 +5,6 @@
 <x-layout>
     <x-slot:title>
         Clipboard
-        <x-slot:version>
-            1.7
-        </x-slot:version>
     </x-slot:title>
     <x-slot:description>
         Clipboard component.

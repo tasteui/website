@@ -31,9 +31,6 @@
             <livewire:documentation.v1.interactions.toast.confirmation/>
         </x-preview>
         <div class="mt-4 space-y-4">
-            <p>
-                <u>Starting from version 1.10.0</u>, the Toast has been improved to allow more flexibility in the format of use:
-            </p>
             <x-code :contents="$confirmationExplanation" disable-copy />
         </div>
     </x-section>
@@ -41,9 +38,6 @@
         <x-preview :contents="$time">
             <livewire:documentation.v1.interactions.toast.timeout/>
         </x-preview>
-        <p class="mt-2">
-            <u>Starting from version 1.14.2</u>, you can set a default timeout through <a href="{{ route('documentation.v1.configuration') }}" wire:navigate class="underline">configuration file:</a>
-        </p>
         <x-code :contents="$defaultTime" disable-copy />
     </x-section>
     <x-section title="Expandable" description="An option to show minimized description texts.">
@@ -65,9 +59,6 @@
         </x-warning>
     </x-section>
     <x-section title="Hooks" new>
-        <p>
-            <u>Starting from version 1.35.0</u> you can now use hooks to perform actions:
-        </p>
         <x-code :contents="$hooks" disable-copy />
         <p>Optionally, you can also set <x-block>params</x-block> as closure:</p>
         <x-code :contents="$hooksCallable" disable-copy />

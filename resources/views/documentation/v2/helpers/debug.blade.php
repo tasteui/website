@@ -5,9 +5,6 @@
 <x-layout>
     <x-slot:title>
         Debug Mode
-        <x-slot:version>
-            v1.5
-        </x-slot:version>
     </x-slot:title>
     <x-slot:description>
         Native debug mode utility.

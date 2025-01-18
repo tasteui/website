@@ -5,9 +5,6 @@
 <x-layout>
     <x-slot:title>
         Boolean
-        <x-slot:version>
-            v1.28
-        </x-slot:version>
     </x-slot:title>
     <x-slot:description>
         Boolean component.
@@ -18,9 +15,7 @@
     <x-section title="Concept" disable-copy>
         <p>
             In many cases when we are building the UI of an application, we need to
-            display icons according to the boolean status of something. <u>Starting from version 1.28.0</u>,
-            TallStackUI offers the Boolean component, simple but useful to avoid having to write if/else
-            conditionals in order to display icons according to the boolean status of something.
+            display icons according to the boolean status of something.
         </p>
     </x-section>
     <x-section title="Basic Usage">

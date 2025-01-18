@@ -5,9 +5,6 @@
 <x-layout>
     <x-slot:title>
         Link
-        <x-slot:version>
-            v1.5
-        </x-slot:version>
     </x-slot:title>
     <x-slot:description>
         Link component.

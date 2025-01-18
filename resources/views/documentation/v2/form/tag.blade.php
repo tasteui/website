@@ -5,9 +5,6 @@
 <x-layout>
     <x-slot:title>
         Form Tag
-        <x-slot:version>
-            v1.10
-        </x-slot:version>
     </x-slot:title>
     <x-slot:description>
         Form tag component.

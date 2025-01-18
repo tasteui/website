@@ -5,9 +5,6 @@
 <x-layout>
     <x-slot:title>
         Banner
-        <x-slot:version>
-            v1.1
-        </x-slot:version>
     </x-slot:title>
     <x-slot:description>
         Banner component.
@@ -54,9 +51,6 @@
         <x-code language="blade" :contents="$colors" disable-copy />
     </x-section>
     <x-section title="Dispatching via Controllers" new anchor="static-dispatching-via-controllers" disable-copy>
-        <p>
-            <u>Starting from version 1.35.0</u> you can trigger a banner via controllers.
-        </p>
         <x-code :contents="$controllers" disable-copy />
     </x-section>
     <x-separator text="Livewire Integration" />
@@ -89,11 +83,6 @@
         </x-preview>
     </x-section>
     <x-section title="Display After Redirects" anchor="livewire-integration-display-after-redirects">
-        <p>
-            <u>Starting from version 1.23.0</u> you can trigger a banner that will actually
-            be displayed after a redirect action. Regardless of whether the redirection is
-            to another Livewire component or to basic controllers, you can still display the banner.
-        </p>
         <x-code :contents="$flash"/>
         <p>
             When using <x-block>flash()</x-block> method, the banner will not be displayed in the current

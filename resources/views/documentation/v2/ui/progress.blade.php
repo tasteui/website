@@ -5,9 +5,6 @@
 <x-layout>
     <x-slot:title>
         Progress
-        <x-slot:version>
-            v1.21
-        </x-slot:version>
     </x-slot:title>
     <x-slot:description>
         Progress component.

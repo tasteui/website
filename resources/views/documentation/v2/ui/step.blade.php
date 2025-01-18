@@ -5,9 +5,6 @@
 <x-layout>
     <x-slot:title>
         Step
-        <x-slot:version>
-            1.20
-        </x-slot:version>
     </x-slot:title>
     <x-slot:description>
         Step components.
