@@ -63,6 +63,7 @@
                     <li>- Componente <x-block>Floating</x-block>: possibilidade de personalizar a classe do Floating pelo componente que o implementa.</li>
                     <li>- Componente <x-block>Form Color</x-block>: adição de opção clearable.</li>
                     <li>- Componente <x-block>Form Input</x-block>: adição de opção clearable.</li>
+                    <li>- Componente <x-block>Form Input</x-block>: possibilidade de definição de <x-block>invalidate</x-block> globalmente.</li>
                     <li>- Componente <x-block>Form Select Styled</x-block>: adição de lazy loading.</li>
                     <li>- Componente <x-block>Form Select Styled</x-block>: adição de agrupação de resultados.</li>
                     <li>- Componente <x-block>Form Select Styled</x-block>: não requer mais o uso <x-block>select</x-block>.</li>
