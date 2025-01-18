@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 Route::redirect('/docs', '/docs/v2/installation');
 Route::redirect('/install', '/docs/v2/installation');
 Route::redirect('/summer-release', '/docs/v1/summer-release');
+Route::redirect('/issue', 'https://github.com/tallstackui/tallstackui/issues/new?template=bug_report.yml')->name('issue');
 
 Route::middleware(ShareVersionVariable::class)
     ->group(function () {
