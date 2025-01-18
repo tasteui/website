@@ -20,9 +20,6 @@
             <li class="relative ml-4">
                 <x-layout.navigation.link :href="route('documentation.v2.upgrade-guide')" text="Upgrade Guide" />
             </li>
-            <li class="relative ml-4">
-                <x-layout.navigation.link :href="route('documentation.v2.livewire-spa-mode')" text="Livewire SPA Mode" />
-            </li>
         </ul>
     </li>
     <li>

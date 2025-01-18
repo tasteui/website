@@ -10,7 +10,6 @@ Route::view('/component-prefix', 'documentation.v2.component-prefix', Example::C
 Route::view('/alpinejs', 'documentation.v2.alpinejs', Example::Alpine->variables())->name('alpinejs');
 Route::view('/troubleshooting', 'documentation.v2.troubleshooting', Example::Troubleshooting->variables())->name('troubleshooting');
 Route::view('/upgrade-guide', 'documentation.v2.upgrade-guide')->name('upgrade-guide');
-Route::view('/livewire-spa-mode', 'documentation.v2.livewire-spa-mode')->name('livewire-spa-mode');
 
 Route::prefix('/form')
     ->name('form.')
