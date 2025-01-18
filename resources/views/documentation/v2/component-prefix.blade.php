@@ -16,7 +16,7 @@
             <x-block>Prefixing Examples</x-block> at the left side of this page and set your desired prefix.
         </p>
     </x-section>
-    <x-section title="1. Configuration File" disable-copy>
+    <x-section title="Configuration File" disable-copy>
         <p>
             As you can imagine, TallStackUI has a very complete configuration file, and there you can configure the prefix,
             however keep in mind that you need to publish the configuration file to perform this process. Just run the command:
@@ -24,27 +24,27 @@
         </p>
         <x-code :contents="$configuration" disable-copy />
         <p>
-            Just to make sure there are no errors, run the following command after setting the prefix: <x-block>php artisan optimize:clear</x-block>
+            Run the following command after setting the prefix: <x-block>php artisan optimize:clear</x-block>
         </p>
     </x-section>
-    <x-section title="2. Environment Variable" disable-copy>
+    <x-section title="Environment Variable" disable-copy>
         <p>
             "I don't want to have to publish the configuration file for something so simple!", you might think, right? Well,
             that's why we provide an environment variable that you can use to set the prefix:
         </p>
         <x-code :contents="$environment" />
         <p>
-            Again, just to make sure there are no errors, run the following command after setting the prefix: <x-block>php artisan optimize:clear</x-block>
+            Run the following command after setting the prefix: <x-block>php artisan optimize:clear</x-block>
         </p>
     </x-section>
-    <x-section title="3. Command" disable-copy>
+    <x-section title="Command" disable-copy>
         <p>
             Even easier, run this command:
         </p>
         <x-code :contents="$command" />
         <p>
-            Behind the scenes, TallStackUI will create the environment variable <x-block>TALLSTACKUI_PREFIX</x-block> with the defined prefix for you. And again,
-            just to make sure there are no errors, run the following command after setting the prefix: <x-block>php artisan optimize:clear</x-block>
+            Behind the scenes, TallStackUI will create the environment variable <x-block>TALLSTACKUI_PREFIX</x-block> with the defined prefix for you.
+            Run the following command after setting the prefix: <x-block>php artisan optimize:clear</x-block>
         </p>
     </x-section>
     <x-section title="Using Prefix" disable-copy>
