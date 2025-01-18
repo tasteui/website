@@ -2,11 +2,7 @@
     <x-slot:title>
         Upgrade Guide
     </x-slot:title>
-    <div>
-        <x-alert title="WARNING!" color="red">
-            2.x is in public beta while we gather community feedback.
-        </x-alert>
-    </div>
+    <x-v2-beta-warning />
     <blockquote class="p-4 my-4 border-s-4 border-gray-500 bg-gray-200/50 dark:border-gray-400 dark:bg-gray-800">
         <p class="text-md italic font-medium leading-relaxed text-gray-900 dark:text-white">
             This page transcribes a conversation between the creator of the TallStackUI - <a href="https://github.com/devajmeireles" target="_blank" class="underline">AJ</a>, and you.

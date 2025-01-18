@@ -2,7 +2,8 @@
     <x-slot:title>
         Installation
     </x-slot:title>
-    <x-section title="Meet TallStackUI" disable-copy>
+    <x-v2-beta-warning />
+    <x-section class="mt-4" title="Meet TallStackUI" disable-copy>
         <x-section disable-copy>
             <p>
                 TallStackUI is <b class="text-pink-600">a powerful suite of 30+ ready-to-use components for TALL Stack applications.</b>
