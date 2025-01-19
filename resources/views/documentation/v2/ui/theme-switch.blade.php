@@ -12,16 +12,10 @@
     <x-slot:personalization>
         <livewire:documentation.v1.personalization :$personalization component="theme-switch" />
     </x-slot:personalization>
-    <x-section title="Concept" anchor="static-concept" disable-copy>
-        <p>
-            As TallStackUI offers <a href="{{ route('documentation.v1.dark-theme') }}" wire:navigate class="underline">a helper
-            to manipulate the dark theme</a>.
-        </p>
-        <x-warning class="mt-2">
-            You should only use this component if are using the <a href="{{ route('documentation.v1.dark-theme') }}" wire:navigate class="underline">dark theme helper.</a>
-        </x-warning>
-    </x-section>
-    <x-section title="Basic Usage">
+    <x-warning class="mt-2">
+        You should only use this component if are using the <a href="{{ route('documentation.v2.dark-theme') }}" wire:navigate class="underline">dark theme helper.</a>
+    </x-warning>
+    <x-section class="mt-4" title="Basic Usage">
         <x-preview language="blade" :contents="$basic">
             <x-theme-switch />
         </x-preview>

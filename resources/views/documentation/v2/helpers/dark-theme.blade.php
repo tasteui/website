@@ -16,27 +16,21 @@
             After applying the helper, an AlpineJS variable called <x-block>darkTheme</x-block> will be offered to control the dark theme
             persisting the changes in the local storage.
         </p>
-        <x-warning>
-            The dark theme helper needs AlpineJS to work, and Livewire 3 automatically delivers AlpineJS only when
-            there are Livewire components on the page. To ensure the dark theme helper works even if there are no
-            Livewire components on the page, load AlpineJS using the <b> @verbatim @livewireScripts @endverbatim </b> directive
-            <a href="https://livewire.laravel.com/docs/installation#manually-including-livewires-frontend-assets" class="underline" target="_blank">as mentioned in the documentation.</a>
-        </x-warning>
-        <p class="mt-4">1. Enable the dark theme support in your TailwindCSS configuration file:</p>
+        <p class="mt-4">Enable the dark theme support in your TailwindCSS configuration file:</p>
         <x-code language="js" :contents="$tailwindcss" disable-copy/>
-        <p class="mt-4">2. Add the helper on the <x-block>html</x-block> tag of your layout:</p>
+        <p class="mt-4">Add the helper on the <x-block>html</x-block> tag of your layout:</p>
         <x-code language="blade" :contents="$helper" disable-copy/>
-        <p>Alternatively, you can customize the name of the state stored in local storage of the browser, <b class="underline">default name is dark-theme</b></p>
+        <p>You can customize the name of the state stored in local storage of the browser, default name is <x-block>dark-theme</x-block></p>
         <x-code language="blade" :contents="$customized" disable-copy/>
-        <p><u>Starting from version 1.5.3</u> you can force the <x-block>darkTheme</x-block> variable to be initialized to true:</p>
+        <p>You can also force the <x-block>darkTheme</x-block> variable to be initialized to true:</p>
         <x-code language="blade" :contents="$initializeAsTrue" disable-copy/>
         <p class="mb-4">This is useful if your theme is dark theme by default.</p>
         <p>3. Create a button to control the dark theme:</p>
         <x-code language="blade" :contents="$button" disable-copy />
         <x-warning>
-            <ul class="list-decimal list-inside text-sm marker:font-bold">
+            <ul class="list-inside text-sm marker:font-bold">
                 <li>This button must be covered by the layout that received the <b>tallstackui_darkTheme</b> helper.</li>
-                <li>If you prefer, <a href="{{ route('documentation.v1.ui.theme-switch') }}" wire:navigate class="underline">TallStackUI offer the Theme Switch component</a> to easily manage the dark theme.</li>
+                <li>If you prefer, <a href="{{ route('documentation.v2.ui.theme-switch') }}" wire:navigate class="underline">TallStackUI offer the Theme Switch component</a> to easily manage the dark theme.</li>
             </ul>
         </x-warning>
         <p class="mt-2">4. Rebuild your assets:</p>

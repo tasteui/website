@@ -53,14 +53,13 @@
         <p>
             Debug mode has a settings section in the TallStackUI configuration file.
             Through this configuration, you can configure several things, such as ignore debug
-            mode for specific components. <a href="{{ route('documentation.v1.configuration') }}" wire:navigate class="underline" target="_blank">
+            mode for specific components. <a href="{{ route('documentation.v2.configuration') }}" wire:navigate class="underline" target="_blank">
             Click here to know how to publish the configuration file.</a>
         </p>
         <x-code :contents="$configuration" disable-copy />
     </x-section>
-    <x-section title="Cautions" disable-copy>
+    <x-section title="Caveats" disable-copy>
         <ul class="list-decimal list-inside">
-            <li><u>We recommend that you only use debug mode in dev. environments.</u></li>
             <li>Debug mode is skipped when running unit tests.</li>
             <li>The <x-block>slot mode</x-block> in debug tooltip indicates you are set the component content through slots.</li>
             <li>Only string-type attributes will be captured.</li>

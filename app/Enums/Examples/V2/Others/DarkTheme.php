@@ -22,7 +22,7 @@ class DarkTheme
 
     public const CUSTOMIZED = <<<'HTML'
     <html ...
-          x-data="tallstackui_darkTheme('other-name')" {{-- [tl! focus] --}}
+          x-data="tallstackui_darkTheme({ name: 'other-name' })" {{-- [tl! focus] --}}
           ...>
         <!-- ... -->
     </html>
@@ -30,7 +30,7 @@ class DarkTheme
 
     public const INITIALIZE_AS_TRUE = <<<'HTML'
     <html ...
-          x-data="tallstackui_darkTheme('other-name', true)" {{-- [tl! focus, highlight] --}}
+          x-data="tallstackui_darkTheme({ default: 'dark' })" {{-- [tl! focus] --}}
           ...>
         <!-- ... -->
     </html>
@@ -46,6 +46,5 @@ class DarkTheme
 
     public const EXAMPLE = <<<'HTML'
     <p class="text-gray-700 dark:text-white">Hello World</p>
-    <div class="bg-white dark:gray-800">Hello World</div>
     HTML;
 }

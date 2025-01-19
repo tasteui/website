@@ -204,7 +204,7 @@
                 <x-layout.navigation.link :href="route('documentation.v2.configuration')" text="Configurations" />
             </li>
             <li class="relative ml-4">
-                <x-layout.navigation.link :href="route('documentation.v2.command')" text="Commands" new />
+                <x-layout.navigation.link :href="route('documentation.v2.command')" text="Commands" />
             </li>
             <li class="relative ml-4">
                 <x-layout.navigation.link :href="route('documentation.v2.translation')" text="Translations" />
